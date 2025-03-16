@@ -39,7 +39,7 @@ website:
     left: "Copyright 2025, Isabel Duarte" 
     right: 
       - icon: github
-        href: https://github.com/iduarte/
+        href: https://github.com/instructr/ualg.rep.data.analysis
     background: light
 
 format:

@@ -854,11 +854,16 @@ In a <code>data.frame</code>, usually the observations are the rows and the vari
 <section id="factors" class="level4">
 <h4 class="anchored" data-anchor-id="factors">Factors</h4>
 <p>Factors are variables in R which take on a limited number of different values - such variables are often refered to as <strong>categorical variables</strong>.</p>
-<p><img src="images/typesOfVariables.png" width="400"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pics/typesOfVariables.png" class="img-fluid figure-img" width="400"></p>
+<figcaption>Figure 4: Main types of variables.</figcaption>
+</figure>
+</div>
 <p><br></p>
 <p>“One of the most important uses of factors is in statistical modeling; since categorical variables enter into statistical models differently than continuous variables, storing data as factors insures that the modeling functions will treat such data correctly.<br>
 Factors in R are stored as a vector of integer values with a corresponding set of character values to use when the factor is displayed. The <code>factor</code> function is used to create a factor. The only required argument to factor is a vector of values which will be returned as a vector of factor values. Both numeric and character variables can be made into factors, but <strong>a factor’s levels will always be character values</strong>. You can see the possible levels for a factor through the <code>levels</code> command.<br>
-Factors represent a very efficient way to store character values, because each unique character value is stored only once, and the data itself is stored as a vector of integers. Because of this, <code>read.table</code> will automatically convert character variables to factors unless the <code>stringsAsFactors = FALSE</code> argument is specified.”</p>
+Factors represent a very efficient way to store character values, because each unique character value is stored only once, and the data itself is stored as a vector of integers.” Because of this, <code>read.table</code> used to convert character variables to factors by default. Since version X of R this has changed, and now the argument <code>stringsAsFactors = FALSE</code> is the default.</p>
 <p>(Adapted from: https://www.stat.berkeley.edu/~s133/factors.html)</p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of numbers to be displayed as Roman Numerals</span></span>
 <span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>my.fdata <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>)</span>
@@ -1597,7 +1602,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/iduarte/">
+    <a class="nav-link" href="https://github.com/instructr/ualg.rep.data.analysis">
       <i class="bi bi-github" role="img">
 </i> 
     </a>

@@ -589,13 +589,13 @@ lst[["a"]]
 
 Factors are variables in R which take on a limited number of different values - such variables are often refered to as **categorical variables**.
 
-<img src="images/typesOfVariables.png" width="400"/>
+![Figure 4: Main types of variables.](pics/typesOfVariables.png){width="400px"}
 
 <br>
 
 "One of the most important uses of factors is in statistical modeling; since categorical variables enter into statistical models differently than continuous variables, storing data as factors insures that the modeling functions will treat such data correctly.\
 Factors in R are stored as a vector of integer values with a corresponding set of character values to use when the factor is displayed. The `factor` function is used to create a factor. The only required argument to factor is a vector of values which will be returned as a vector of factor values. Both numeric and character variables can be made into factors, but **a factor's levels will always be character values**. You can see the possible levels for a factor through the `levels` command.\
-Factors represent a very efficient way to store character values, because each unique character value is stored only once, and the data itself is stored as a vector of integers. Because of this, `read.table` will automatically convert character variables to factors unless the `stringsAsFactors = FALSE` argument is specified."
+Factors represent a very efficient way to store character values, because each unique character value is stored only once, and the data itself is stored as a vector of integers." Because of this, `read.table` used to convert character variables to factors by default. Since version X of R this has changed, and now the argument `stringsAsFactors = FALSE` is the default.
 
 (Adapted from: https://www.stat.berkeley.edu/\~s133/factors.html)
 
