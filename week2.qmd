@@ -1,0 +1,30 @@
+---
+title: "Week 2 | 2. R Intro & Tidy data"
+---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 13 March, 2025  
+⏰ **Time:** 09:00h - 11:00h  
+📖 **Synopsis:** Brief introduction to R, and Introduction to tidy data  
+:::
+
+</br>
+
+### Overview
+
+In the following two tabs, you will find a brief **introductory R tutorial** covering key concepts such as fundamental syntax, core data structures (vectors, matrices, data frames, lists, and factors), control flow with loops and conditionals, function declaration, and commonly used built-in functions. The second tab introduces the concept of **tidy data** and provides guidance on transforming untidy data into a tidy format.
+
+
+:::{.panel-tabset}
+
+# R Intro
+
+{{< include _r4ab_hands_on_tutorial.qmd >}}
+
+# Tidy data
+
+{{< include _tidy_data_intro.qmd >}}
+
+:::
+

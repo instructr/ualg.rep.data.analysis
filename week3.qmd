@@ -1,0 +1,17 @@
+---
+title: "Week 3 | 2. Hands-on Tidy data"
+---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 20 March, 2025  
+⏰ **Time:** 09:30h - 11:30h  
+📖 **Synopsis:** TBA  
+:::
+
+</br>
+
+### Overview
+
+TBA
+

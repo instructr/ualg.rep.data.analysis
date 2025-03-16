@@ -1,0 +1,13 @@
+---
+title: "R Training materials"
+format: html
+editor: source
+---
+
+The training materials that I have developed for past R courses are open and freely available online: 
+
+  - [R for Absolute Beginners](https://www.pattern.institute/rmind-workshop/2_hands_on_tutorial.html) (2022)
+  - [Tidy Data & Visualization with R](https://rmagno.eu/tdvr.oct.22/about.html) (2022) 
+  - [Publication-Ready Graphs using R](https://www.pattern.institute/rmind-workshop/6_pub_ready_graphs.html) (2023)
+  - [Transcriptomics data analysis](https://www.pattern.institute/rmind-workshop/) (2023)
+  
