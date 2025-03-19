@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 3 | 2. Hands-on Tidy data – Reproducible Data Analysis Course</title>
+<title>Week 3 | 2. Identify variables &amp; Hands-on Tidy data – Reproducible Data Analysis Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week3.html">
- <span class="dropdown-text">Week 3 | 2. Hands-on Tidy data</span></a>
+ <span class="dropdown-text">Week 3 | 2. Identify variables &amp; Hands-on Tidy data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week4.html">
@@ -185,21 +185,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 3 | 2. Hands-on Tidy data</h1>
+<h1 class="title">Week 3 | 2. Identify variables &amp; Hands-on Tidy data</h1>
 </div>
 
 
@@ -232,12 +226,224 @@ Class Details
 </div>
 </div>
 <p><br></p>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>TBA</p>
-
-
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Experimental Designs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="controlled-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="controlled-experiment">1. Controlled Experiment</h4>
+<ul>
+<li><strong>Description:</strong> Researcher manipulates one or more variables while keeping others constant.</li>
+<li><strong>Example:</strong> Adjusting pH levels in aquaria and measuring coral growth.</li>
+<li><strong>Strengths:</strong> Clear cause-effect relationships, high internal validity.</li>
+<li><strong>Limitations:</strong> May lack realism in natural environments.</li>
+</ul>
 </section>
+<section id="observational-study" class="level4">
+<h4 class="anchored" data-anchor-id="observational-study">2. Observational Study</h4>
+<ul>
+<li><strong>Description:</strong> No manipulation; variables are observed as they naturally occur.</li>
+<li><strong>Example:</strong> Comparing fish diversity in protected vs.&nbsp;unprotected areas.</li>
+<li><strong>Types:</strong>
+<ul>
+<li><strong>Cross-sectional:</strong> Single point in time.</li>
+<li><strong>Longitudinal (Time-series):</strong> Data collected over time.</li>
+</ul></li>
+<li><strong>Strengths:</strong> Realistic, practical.</li>
+<li><strong>Limitations:</strong> Cannot infer causation definitively.</li>
+</ul>
+</section>
+<section id="correlational-study" class="level4">
+<h4 class="anchored" data-anchor-id="correlational-study">3. Correlational Study</h4>
+<ul>
+<li><strong>Description:</strong> Measures the relationship between variables without manipulation.</li>
+<li><strong>Example:</strong> Monitoring algal biomass and oxygen levels to detect patterns.</li>
+<li><strong>Strengths:</strong> Good for detecting associations.</li>
+<li><strong>Limitations:</strong> No causal conclusions.</li>
+</ul>
+</section>
+<section id="randomized-controlled-trial-rct" class="level4">
+<h4 class="anchored" data-anchor-id="randomized-controlled-trial-rct">4. Randomized Controlled Trial (RCT)</h4>
+<ul>
+<li><strong>Description:</strong> Random assignment of subjects/units to treatments and control.</li>
+<li><strong>Example:</strong> Randomly assigning noise levels to dolphin enclosures.</li>
+<li><strong>Strengths:</strong> Minimizes bias, strong causal inference.</li>
+<li><strong>Limitations:</strong> Logistically complex in the field.</li>
+</ul>
+</section>
+<section id="factorial-design" class="level4">
+<h4 class="anchored" data-anchor-id="factorial-design">5. Factorial Design</h4>
+<ul>
+<li><strong>Description:</strong> Tests multiple independent variables simultaneously.</li>
+<li><strong>Example:</strong> Testing combined effects of temperature and salinity on zooplankton.</li>
+<li><strong>Strengths:</strong> Identifies interaction effects between variables.</li>
+<li><strong>Limitations:</strong> Requires more samples.</li>
+</ul>
+</section>
+<section id="before-after-control-impact-baci-design" class="level4">
+<h4 class="anchored" data-anchor-id="before-after-control-impact-baci-design">6. Before-After Control-Impact (BACI) Design</h4>
+<ul>
+<li><strong>Description:</strong> Compares conditions before and after an impact at both affected and control sites.</li>
+<li><strong>Example:</strong> Measuring water quality before and after coastal development.</li>
+<li><strong>Strengths:</strong> Controls for natural variability.</li>
+<li><strong>Limitations:</strong> Requires baseline data.</li>
+</ul>
+</section>
+<section id="natural-experiment" class="level4">
+<h4 class="anchored" data-anchor-id="natural-experiment">7. Natural Experiment</h4>
+<ul>
+<li><strong>Description:</strong> Utilizes naturally occurring events as treatments.</li>
+<li><strong>Example:</strong> Studying fish populations after a hurricane.</li>
+<li><strong>Strengths:</strong> High ecological validity.</li>
+<li><strong>Limitations:</strong> Limited control over variables.</li>
+</ul>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Goal</strong> | This exercise aims at training students to critically extract key experimental details from textual descriptions.</p>
+<p><strong>Instructions</strong> | Read each narrative description carefully. For each one, identify:</p>
+<ul>
+<li>Experimental Design (check the Experimental Designs tab)</li>
+<li>Independent Variable(s)</li>
+<li>Dependent Variable(s)</li>
+<li>Control Variable(s) (if applicable)</li>
+</ul>
+<hr>
+<section id="example-1-ocean-acidification-on-coral-growth" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-ocean-acidification-on-coral-growth"><strong>Example 1: Ocean Acidification on Coral Growth</strong></h3>
+<p><strong>Narrative:</strong></p>
+<p>Researchers want to test how increased ocean acidification affects the growth of a common coral species. They set up three aquaria with seawater at different pH levels: 8.1 (current ocean pH), 7.8, and 7.5. Identical coral fragments are placed in each aquarium, and all tanks are kept under the same light and temperature conditions. After six months, they measure the calcification rate of the corals.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 1 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 1 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Experimental Design:</strong> Controlled laboratory experiment with three treatment groups.</li>
+<li><strong>Independent Variable:</strong> pH level of seawater (8.1, 7.8, 7.5)</li>
+<li><strong>Dependent Variable:</strong> Coral calcification rate (growth)</li>
+<li><strong>Control Variables:</strong> Light intensity, water temperature, coral species and fragment size, nutrient levels.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="example-2-marine-protected-areas-and-fish-biodiversity" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-marine-protected-areas-and-fish-biodiversity"><strong>Example 2: Marine Protected Areas and Fish Biodiversity</strong></h3>
+<p><strong>Narrative:</strong></p>
+<p>A team surveys fish species diversity in 10 marine protected areas (MPAs) and compares it with 10 nearby unprotected coastal sites. Surveys are conducted using the same underwater visual census method at all locations during the same season.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 2 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 2 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Experimental Design:</strong> Observational comparative study (between protected and unprotected areas)</li>
+<li><strong>Independent Variable:</strong> Protection status (MPA vs.&nbsp;unprotected site)</li>
+<li><strong>Dependent Variable:</strong> Fish species diversity (number of species observed)</li>
+<li><strong>Control Variables:</strong> Survey method, season, location depth, time of day surveyed.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="example-3-plastic-pollution-impact-on-zooplankton" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-plastic-pollution-impact-on-zooplankton"><strong>Example 3: Plastic Pollution Impact on Zooplankton</strong></h3>
+<p><strong>Narrative:</strong></p>
+<p>Scientists investigate whether microplastic concentration affects zooplankton reproduction. They prepare four tanks with different microplastic concentrations: 0 particles/mL, 10 particles/mL, 100 particles/mL, and 1,000 particles/mL. Each tank contains the same number of zooplankton individuals and is kept at constant temperature, salinity, and food availability. After two weeks, they count the number of offspring produced.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 3 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 3 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Experimental Design:</strong> Controlled laboratory experiment with graded treatments.</li>
+<li><strong>Independent Variable:</strong> Microplastic concentration (0, 10, 100, 1,000 particles/mL)</li>
+<li><strong>Dependent Variable:</strong> Number of zooplankton offspring</li>
+<li><strong>Control Variables:</strong> Temperature, salinity, food availability, initial zooplankton number/species.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="example-4-algal-bloom-effects-on-oxygen-levels" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-algal-bloom-effects-on-oxygen-levels"><strong>Example 4: Algal Bloom Effects on Oxygen Levels</strong></h3>
+<p><strong>Narrative:</strong></p>
+<p>To examine the effect of algal blooms on oxygen levels, researchers monitor dissolved oxygen in a coastal bay over six months. They record algal biomass, water temperature, and nutrient concentrations weekly. They look for correlations between algal biomass and oxygen concentration.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 4 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 4 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Experimental Design:</strong> Observational time-series study</li>
+<li><strong>Independent Variable:</strong> Algal biomass (measured continuously)</li>
+<li><strong>Dependent Variable:</strong> Dissolved oxygen concentration</li>
+<li><strong>Control Variables:</strong> Recording temperature and nutrient levels allows adjustment for confounding variables.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="example-5-noise-pollution-impact-on-dolphin-communication" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-noise-pollution-impact-on-dolphin-communication"><strong>Example 5: Noise Pollution Impact on Dolphin Communication</strong></h3>
+<p><strong>Narrative:</strong></p>
+<p>Marine biologists play varying levels of ship noise recordings in a controlled enclosure housing a pod of dolphins. For each noise level (low, medium, high), they observe and record the frequency and duration of dolphin whistles. Sessions are randomized, and the dolphins have rest periods between exposures.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 5 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 5 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Experimental Design:</strong> Randomized controlled experiment</li>
+<li><strong>Independent Variable:</strong> Ship noise level (low, medium, high)</li>
+<li><strong>Dependent Variables:</strong> Frequency and duration of dolphin whistles</li>
+<li><strong>Control Variables:</strong> Same dolphin pod, rest periods, enclosure size, time of day.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

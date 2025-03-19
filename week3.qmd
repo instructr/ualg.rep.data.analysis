@@ -1,5 +1,5 @@
 ---
-title: "Week 3 | 2. Hands-on Tidy data"
+title: "Week 3 | 2. Identify variables & Hands-on Tidy data"
 ---
 
 ::: {.callout-note}
@@ -11,7 +11,155 @@ title: "Week 3 | 2. Hands-on Tidy data"
 
 </br>
 
-### Overview
+:::{.panel-tabset}
 
-TBA
+## Experimental Designs
+
+#### 1. Controlled Experiment
+
+- **Description:** Researcher manipulates one or more variables while keeping others constant.
+- **Example:** Adjusting pH levels in aquaria and measuring coral growth.
+- **Strengths:** Clear cause-effect relationships, high internal validity.
+- **Limitations:** May lack realism in natural environments.
+
+
+#### 2. Observational Study
+
+- **Description:** No manipulation; variables are observed as they naturally occur.
+- **Example:** Comparing fish diversity in protected vs. unprotected areas.
+- **Types:**
+  - **Cross-sectional:** Single point in time.
+  - **Longitudinal (Time-series):** Data collected over time.
+- **Strengths:** Realistic, practical.
+- **Limitations:** Cannot infer causation definitively.
+
+
+#### 3. Correlational Study
+
+- **Description:** Measures the relationship between variables without manipulation.
+- **Example:** Monitoring algal biomass and oxygen levels to detect patterns.
+- **Strengths:** Good for detecting associations.
+- **Limitations:** No causal conclusions.
+
+
+#### 4. Randomized Controlled Trial (RCT)
+
+- **Description:** Random assignment of subjects/units to treatments and control.
+- **Example:** Randomly assigning noise levels to dolphin enclosures.
+- **Strengths:** Minimizes bias, strong causal inference.
+- **Limitations:** Logistically complex in the field.
+
+
+#### 5. Factorial Design
+
+- **Description:** Tests multiple independent variables simultaneously.
+- **Example:** Testing combined effects of temperature and salinity on zooplankton.
+- **Strengths:** Identifies interaction effects between variables.
+- **Limitations:** Requires more samples.
+
+
+#### 6. Before-After Control-Impact (BACI) Design
+
+- **Description:** Compares conditions before and after an impact at both affected and control sites.
+- **Example:** Measuring water quality before and after coastal development.
+- **Strengths:** Controls for natural variability.
+- **Limitations:** Requires baseline data.
+
+#### 7. Natural Experiment
+
+- **Description:** Utilizes naturally occurring events as treatments.
+- **Example:** Studying fish populations after a hurricane.
+- **Strengths:** High ecological validity.
+- **Limitations:** Limited control over variables.
+
+
+## Exercise
+
+**Goal** | This exercise aims at training students to critically extract key experimental details from textual descriptions.
+
+**Instructions** | Read each narrative description carefully. For each one, identify:
+
+- Experimental Design (check the Experimental Designs tab)
+- Independent Variable(s)
+- Dependent Variable(s)
+- Control Variable(s) (if applicable)
+
+---
+
+### **Example 1: Ocean Acidification on Coral Growth**
+
+**Narrative:**
+
+Researchers want to test how increased ocean acidification affects the growth of a common coral species. They set up three aquaria with seawater at different pH levels: 8.1 (current ocean pH), 7.8, and 7.5. Identical coral fragments are placed in each aquarium, and all tanks are kept under the same light and temperature conditions. After six months, they measure the calcification rate of the corals.
+
+::: {.callout-tip collapse=true title="Solution 1 | Click to show"}
+
+- **Experimental Design:** Controlled laboratory experiment with three treatment groups.
+- **Independent Variable:** pH level of seawater (8.1, 7.8, 7.5)
+- **Dependent Variable:** Coral calcification rate (growth)
+- **Control Variables:** Light intensity, water temperature, coral species and fragment size, nutrient levels.
+
+:::
+
+### **Example 2: Marine Protected Areas and Fish Biodiversity**
+
+**Narrative:**
+
+A team surveys fish species diversity in 10 marine protected areas (MPAs) and compares it with 10 nearby unprotected coastal sites. Surveys are conducted using the same underwater visual census method at all locations during the same season.
+
+::: {.callout-tip collapse=true title="Solution 2 | Click to show"}
+
+- **Experimental Design:** Observational comparative study (between protected and unprotected areas)
+- **Independent Variable:** Protection status (MPA vs. unprotected site)
+- **Dependent Variable:** Fish species diversity (number of species observed)
+- **Control Variables:** Survey method, season, location depth, time of day surveyed.
+
+:::
+
+### **Example 3: Plastic Pollution Impact on Zooplankton**
+
+**Narrative:**
+
+Scientists investigate whether microplastic concentration affects zooplankton reproduction. They prepare four tanks with different microplastic concentrations: 0 particles/mL, 10 particles/mL, 100 particles/mL, and 1,000 particles/mL. Each tank contains the same number of zooplankton individuals and is kept at constant temperature, salinity, and food availability. After two weeks, they count the number of offspring produced.
+
+::: {.callout-tip collapse=true title="Solution 3 | Click to show"}
+
+- **Experimental Design:** Controlled laboratory experiment with graded treatments.
+- **Independent Variable:** Microplastic concentration (0, 10, 100, 1,000 particles/mL)
+- **Dependent Variable:** Number of zooplankton offspring
+- **Control Variables:** Temperature, salinity, food availability, initial zooplankton number/species.
+
+:::
+
+### **Example 4: Algal Bloom Effects on Oxygen Levels**
+
+**Narrative:**
+
+To examine the effect of algal blooms on oxygen levels, researchers monitor dissolved oxygen in a coastal bay over six months. They record algal biomass, water temperature, and nutrient concentrations weekly. They look for correlations between algal biomass and oxygen concentration.
+
+::: {.callout-tip collapse=true title="Solution 4 | Click to show"}
+
+- **Experimental Design:** Observational time-series study
+- **Independent Variable:** Algal biomass (measured continuously)
+- **Dependent Variable:** Dissolved oxygen concentration
+- **Control Variables:** Recording temperature and nutrient levels allows adjustment for confounding variables.
+
+:::
+
+### **Example 5: Noise Pollution Impact on Dolphin Communication**
+
+**Narrative:**
+
+Marine biologists play varying levels of ship noise recordings in a controlled enclosure housing a pod of dolphins. For each noise level (low, medium, high), they observe and record the frequency and duration of dolphin whistles. Sessions are randomized, and the dolphins have rest periods between exposures.
+
+::: {.callout-tip collapse=true title="Solution 5 | Click to show"}
+
+- **Experimental Design:** Randomized controlled experiment
+- **Independent Variable:** Ship noise level (low, medium, high)
+- **Dependent Variables:** Frequency and duration of dolphin whistles
+- **Control Variables:** Same dolphin pod, rest periods, enclosure size, time of day.
+
+:::
+
+:::
 
