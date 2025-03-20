@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 3 | 2. Identify variables &amp; Hands-on Tidy data – Reproducible Data Analysis Course</title>
+<title>Week 3 | 2. Identify variables &amp; Tidy data – Reproducible Data Analysis Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week3.html">
- <span class="dropdown-text">Week 3 | 2. Identify variables &amp; Hands-on Tidy data</span></a>
+ <span class="dropdown-text">Week 3 | 2. Identify variables &amp; Tidy data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week4.html">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 3 | 2. Identify variables &amp; Hands-on Tidy data</h1>
+<h1 class="title">Week 3 | 2. Identify variables &amp; Tidy data</h1>
 </div>
 
 
@@ -222,14 +222,16 @@ Class Details
 <div class="callout-body-container callout-body">
 <p>📅 <strong>Date:</strong> 20 March, 2025<br>
 ⏰ <strong>Time:</strong> 09:30h - 11:30h<br>
-📖 <strong>Synopsis:</strong> TBA</p>
+📖 <strong>Synopsis:</strong> Extract experimental details from text, format tidy tables, and reverse engineer study design from tidy tables.</p>
 </div>
 </div>
 <p><br></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Experimental Designs</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Theory</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Exercise 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Exercise 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Exercise 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Food for thought</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="experimental-designs" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-designs">Experimental Designs</h3>
 <section id="controlled-experiment" class="level4">
 <h4 class="anchored" data-anchor-id="controlled-experiment">1. Controlled Experiment</h4>
 <ul>
@@ -298,6 +300,7 @@ Class Details
 <li><strong>Limitations:</strong> Limited control over variables.</li>
 </ul>
 </section>
+</section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p><strong>Goal</strong> | This exercise aims at training students to critically extract key experimental details from textual descriptions.</p>
@@ -311,7 +314,6 @@ Class Details
 <hr>
 <section id="example-1-ocean-acidification-on-coral-growth" class="level3">
 <h3 class="anchored" data-anchor-id="example-1-ocean-acidification-on-coral-growth"><strong>Example 1: Ocean Acidification on Coral Growth</strong></h3>
-<p><strong>Narrative:</strong></p>
 <p>Researchers want to test how increased ocean acidification affects the growth of a common coral species. They set up three aquaria with seawater at different pH levels: 8.1 (current ocean pH), 7.8, and 7.5. Identical coral fragments are placed in each aquarium, and all tanks are kept under the same light and temperature conditions. After six months, they measure the calcification rate of the corals.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution 1 | Click to show">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
@@ -334,10 +336,10 @@ Solution 1 | Click to show
 </div>
 </div>
 </div>
+<hr>
 </section>
 <section id="example-2-marine-protected-areas-and-fish-biodiversity" class="level3">
 <h3 class="anchored" data-anchor-id="example-2-marine-protected-areas-and-fish-biodiversity"><strong>Example 2: Marine Protected Areas and Fish Biodiversity</strong></h3>
-<p><strong>Narrative:</strong></p>
 <p>A team surveys fish species diversity in 10 marine protected areas (MPAs) and compares it with 10 nearby unprotected coastal sites. Surveys are conducted using the same underwater visual census method at all locations during the same season.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution 2 | Click to show">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
@@ -360,10 +362,10 @@ Solution 2 | Click to show
 </div>
 </div>
 </div>
+<hr>
 </section>
 <section id="example-3-plastic-pollution-impact-on-zooplankton" class="level3">
 <h3 class="anchored" data-anchor-id="example-3-plastic-pollution-impact-on-zooplankton"><strong>Example 3: Plastic Pollution Impact on Zooplankton</strong></h3>
-<p><strong>Narrative:</strong></p>
 <p>Scientists investigate whether microplastic concentration affects zooplankton reproduction. They prepare four tanks with different microplastic concentrations: 0 particles/mL, 10 particles/mL, 100 particles/mL, and 1,000 particles/mL. Each tank contains the same number of zooplankton individuals and is kept at constant temperature, salinity, and food availability. After two weeks, they count the number of offspring produced.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution 3 | Click to show">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
@@ -386,10 +388,10 @@ Solution 3 | Click to show
 </div>
 </div>
 </div>
+<hr>
 </section>
 <section id="example-4-algal-bloom-effects-on-oxygen-levels" class="level3">
 <h3 class="anchored" data-anchor-id="example-4-algal-bloom-effects-on-oxygen-levels"><strong>Example 4: Algal Bloom Effects on Oxygen Levels</strong></h3>
-<p><strong>Narrative:</strong></p>
 <p>To examine the effect of algal blooms on oxygen levels, researchers monitor dissolved oxygen in a coastal bay over six months. They record algal biomass, water temperature, and nutrient concentrations weekly. They look for correlations between algal biomass and oxygen concentration.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution 4 | Click to show">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
@@ -412,10 +414,10 @@ Solution 4 | Click to show
 </div>
 </div>
 </div>
+<hr>
 </section>
 <section id="example-5-noise-pollution-impact-on-dolphin-communication" class="level3">
 <h3 class="anchored" data-anchor-id="example-5-noise-pollution-impact-on-dolphin-communication"><strong>Example 5: Noise Pollution Impact on Dolphin Communication</strong></h3>
-<p><strong>Narrative:</strong></p>
 <p>Marine biologists play varying levels of ship noise recordings in a controlled enclosure housing a pod of dolphins. For each noise level (low, medium, high), they observe and record the frequency and duration of dolphin whistles. Sessions are randomized, and the dolphins have rest periods between exposures.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Solution 5 | Click to show">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
@@ -438,6 +440,704 @@ Solution 5 | Click to show
 </div>
 </div>
 </div>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>Goal</strong> | To bridge experimental design concepts with practical data skills.</p>
+<p><strong>Instructions</strong> | After identifying the <em>independent</em>, <em>dependent</em>, and <em>control variables</em> from each “narrative”, describe how the data would be organized in a tidy data table. Specifically:</p>
+<ol type="1">
+<li><strong>Columns:</strong> What variables are measured or recorded?</li>
+<li><strong>Rows:</strong> What does each row represent (unit of observation)?</li>
+<li><strong>Variable types:</strong> Are variables numeric or categorical?</li>
+<li><strong>Control variables:</strong> How are they documented?</li>
+</ol>
+<hr>
+<section id="example-1-ocean-acidification-on-coral-growth-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-ocean-acidification-on-coral-growth-1">Example 1: Ocean Acidification on Coral Growth</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 1 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 1 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Tidy Table Example:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 9%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">tank_id</th>
+<th style="text-align: center;">pH</th>
+<th style="text-align: right;">calcification_rate</th>
+<th style="text-align: right;">light_intensity</th>
+<th style="text-align: right;">temp_C</th>
+<th style="text-align: center;">coral_species</th>
+<th style="text-align: right;">nutrient_conc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">Tank_1</td>
+<td style="text-align: center;">8.1</td>
+<td style="text-align: right;">2.3</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Acropora sp.</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">Tank_2</td>
+<td style="text-align: center;">7.8</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Acropora sp.</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">Tank_3</td>
+<td style="text-align: center;">7.5</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Acropora sp.</td>
+<td style="text-align: right;">3</td>
+</tr>
+</tbody>
+</table>
+<p><em>Each row = one coral fragment after six months.</em></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-2-marine-protected-areas-and-fish-biodiversity-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-marine-protected-areas-and-fish-biodiversity-1">Example 2: Marine Protected Areas and Fish Biodiversity</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 2 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 2 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Tidy Table Example:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 19%">
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 9%">
+<col style="width: 8%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">site_id</th>
+<th style="text-align: center;">protection_status</th>
+<th style="text-align: right;">fish_species_count</th>
+<th style="text-align: center;">survey_method</th>
+<th style="text-align: center;">season</th>
+<th style="text-align: right;">depth_m</th>
+<th style="text-align: center;">time_of_day</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">MPA_1</td>
+<td style="text-align: center;">MPA</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Visual Census</td>
+<td style="text-align: center;">Spring</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">MPA_2</td>
+<td style="text-align: center;">MPA</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Visual Census</td>
+<td style="text-align: center;">Spring</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Site_1</td>
+<td style="text-align: center;">Unprotected</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Visual Census</td>
+<td style="text-align: center;">Spring</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Site_2</td>
+<td style="text-align: center;">Unprotected</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: center;">Visual Census</td>
+<td style="text-align: center;">Spring</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+</tbody>
+</table>
+<p><em>Each row = one survey at one site.</em></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-3-plastic-pollution-impact-on-zooplankton-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-plastic-pollution-impact-on-zooplankton-1">Example 3: Plastic Pollution Impact on Zooplankton</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 3 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 3 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Tidy Table Example:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 20%">
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 15%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">tank_id</th>
+<th style="text-align: right;">microplastic_conc</th>
+<th style="text-align: right;">offspring_count</th>
+<th style="text-align: right;">temp_C</th>
+<th style="text-align: right;">salinity</th>
+<th style="text-align: right;">food_available</th>
+<th style="text-align: center;">zooplankton_sp</th>
+<th style="text-align: right;">initial_count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Tank_A</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">High</td>
+<td style="text-align: center;">Copepod sp.</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Tank_B</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">High</td>
+<td style="text-align: center;">Copepod sp.</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Tank_C</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">High</td>
+<td style="text-align: center;">Copepod sp.</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Tank_D</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">High</td>
+<td style="text-align: center;">Copepod sp.</td>
+<td style="text-align: right;">50</td>
+</tr>
+</tbody>
+</table>
+<p><em>Each row = one tank’s measurement.</em></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-4-algal-bloom-effects-on-oxygen-levels-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-algal-bloom-effects-on-oxygen-levels-1">Example 4: Algal Bloom Effects on Oxygen Levels</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 4 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 4 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Tidy Table Example:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 22%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">date</th>
+<th style="text-align: right;">algal_biomass</th>
+<th style="text-align: right;">dissolved_oxygen</th>
+<th style="text-align: right;">water_temp_C</th>
+<th style="text-align: right;">nutrient_conc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2024-01-01</td>
+<td style="text-align: right;">12.5</td>
+<td style="text-align: right;">6.8</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">3.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2024-01-08</td>
+<td style="text-align: right;">15.3</td>
+<td style="text-align: right;">5.4</td>
+<td style="text-align: right;">18.4</td>
+<td style="text-align: right;">3.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2024-01-15</td>
+<td style="text-align: right;">20.1</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">18.6</td>
+<td style="text-align: right;">3.0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Control variables (temperature and nutrients) are recorded alongside the key variables to control for confounding effects.</em></p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-5-noise-pollution-impact-on-dolphin-communication-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-noise-pollution-impact-on-dolphin-communication-1">Example 5: Noise Pollution Impact on Dolphin Communication</h3>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 5 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 5 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Tidy Table Example:</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 14%">
+<col style="width: 6%">
+<col style="width: 15%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">session_id</th>
+<th style="text-align: center;">noise_level</th>
+<th style="text-align: right;">whistle_freq</th>
+<th style="text-align: right;">whistle_duration</th>
+<th style="text-align: right;">rest_period_min</th>
+<th style="text-align: center;">pod_id</th>
+<th style="text-align: right;">enclosure_size_m</th>
+<th style="text-align: center;">time_of_day</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Sess_1</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">7500</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Pod_1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sess_2</td>
+<td style="text-align: center;">Medium</td>
+<td style="text-align: right;">7100</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Pod_1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Sess_3</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">6800</td>
+<td style="text-align: right;">1.4</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Pod_1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: center;">Morning</td>
+</tr>
+</tbody>
+</table>
+<p><em>Each row = one noise exposure session.</em></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p><strong>Goal</strong> | To “reverse engineer” the experimental design and research question from a tidy table to build critical thinking skills.</p>
+<p><strong>Instructions</strong> | In this exercise, you are given tidy data tables. Your task:</p>
+<ol type="1">
+<li><strong>Interpret:</strong> What scientific question might the researchers be asking?</li>
+<li><strong>Identify Variables:</strong> Which variables are:
+<ul>
+<li><strong>Independent (manipulated or compared)</strong></li>
+<li><strong>Dependent (measured outcome)</strong></li>
+<li><strong>Control (kept constant or recorded for adjustment)</strong></li>
+</ul></li>
+<li><strong>Describe Experimental Design:</strong> Is it observational, controlled, randomized?</li>
+</ol>
+<hr>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example 1</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">tank_id</th>
+<th style="text-align: right;">light_intensity</th>
+<th style="text-align: center;">nutrient_level</th>
+<th style="text-align: right;">temp_C</th>
+<th style="text-align: center;">seaweed_species</th>
+<th style="text-align: right;">biomass_increase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Tank_1</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Ulva sp.</td>
+<td style="text-align: right;">4.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Tank_2</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Ulva sp.</td>
+<td style="text-align: right;">8.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Tank_3</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Ulva sp.</td>
+<td style="text-align: right;">6.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Tank_4</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: center;">Ulva sp.</td>
+<td style="text-align: right;">11.4</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 1 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 1 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Possible Research Question:</strong></p>
+<blockquote class="blockquote">
+<p><em>How do light intensity and nutrient levels affect seaweed biomass increase under controlled conditions?</em></p>
+</blockquote>
+<p><strong>Experimental Design:</strong><br>
+Controlled laboratory factorial experiment (2x2 design: light × nutrient).</p>
+<p><strong>Variables:</strong></p>
+<ul>
+<li><strong>Independent Variables:</strong> <code>light_intensity</code> (100, 200), <code>nutrient_level</code> (Low, High)</li>
+<li><strong>Dependent Variable:</strong> <code>biomass_increase</code></li>
+<li><strong>Control Variables:</strong> <code>temperature</code>, <code>seaweed_species</code> (constant across tanks)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-2" class="level3">
+<h3 class="anchored" data-anchor-id="example-2">Example 2</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 24%">
+<col style="width: 10%">
+<col style="width: 18%">
+<col style="width: 20%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">site_id</th>
+<th style="text-align: center;">fishing_pressure</th>
+<th style="text-align: right;">depth_m</th>
+<th style="text-align: center;">habitat_type</th>
+<th style="text-align: center;">survey_method</th>
+<th style="text-align: right;">shark_count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Site_A</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Reef</td>
+<td style="text-align: center;">Baited Camera</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Site_B</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: center;">Reef</td>
+<td style="text-align: center;">Baited Camera</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Site_C</td>
+<td style="text-align: center;">High</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Sandy</td>
+<td style="text-align: center;">Baited Camera</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Site_D</td>
+<td style="text-align: center;">Low</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: center;">Sandy</td>
+<td style="text-align: center;">Baited Camera</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 2 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 2 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Possible Research Question:</strong></p>
+<blockquote class="blockquote">
+<p><em>Is shark abundance lower in areas with high fishing pressure compared to low fishing pressure areas?</em></p>
+</blockquote>
+<p><strong>Experimental Design:</strong><br>
+Observational comparative study (across sites).</p>
+<p><strong>Variables:</strong></p>
+<ul>
+<li><strong>Independent Variable:</strong> <code>fishing_pressure</code> (High, Low)</li>
+<li><strong>Dependent Variable:</strong> <code>shark_count</code></li>
+<li><strong>Control Variables:</strong> <code>depth_m</code>, <code>habitat_type</code>, <code>survey_method</code> (standardized across sites)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="example-3" class="level3">
+<h3 class="anchored" data-anchor-id="example-3">Example 3</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 9%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 27%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">sample_id</th>
+<th style="text-align: right;">salinity</th>
+<th style="text-align: right;">temp_C</th>
+<th style="text-align: right;">sample_depth_m</th>
+<th style="text-align: right;">chlorophyll_conc</th>
+<th style="text-align: right;">plankton_sp_count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Sample_1</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sample_2</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Sample_3</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Sample_4</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution 3 | Click to show">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution 3 | Click to show
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Possible Research Question:</strong></p>
+<blockquote class="blockquote">
+<p><em>How does salinity influence plankton species diversity in coastal waters?</em></p>
+</blockquote>
+<p><strong>Experimental Design:</strong><br>
+Observational gradient study.</p>
+<p><strong>Variables:</strong></p>
+<ul>
+<li><strong>Independent Variable:</strong> <code>salinity</code> (continuous gradient)</li>
+<li><strong>Dependent Variable:</strong> <code>plankton_species_count</code></li>
+<li><strong>Control Variables:</strong> <code>temperature</code>, <code>sample_depth_m</code>, <code>chlorophyll_concentration</code> (recorded)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<section id="experimental-design-variables" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design-variables">1. Experimental Design &amp; Variables</h3>
+<ul>
+<li>What information helps you distinguish between independent, dependent, and control variables?</li>
+<li>How can you tell whether a study is controlled, randomized, or observational based solely on the dataset?</li>
+<li>Why is it important to clearly document control variables, even if they are kept constant?</li>
+<li>In some examples, more than one independent variable is manipulated. How would you recognize and interpret this factorial design?</li>
+<li>How might confounding variables influence the results if not properly controlled?</li>
+</ul>
+<hr>
+</section>
+<section id="tidy-data-structure" class="level3">
+<h3 class="anchored" data-anchor-id="tidy-data-structure">2. Tidy Data Structure</h3>
+<ul>
+<li>Why is it useful to structure experimental data in a tidy format (one variable per column, one observation per row)?</li>
+<li>What could go wrong in analysis or visualization if data were not kept in tidy format?</li>
+<li>How do identifiers like <code>tank_id</code>, <code>site_id</code>, or <code>session_id</code> help maintain data clarity and traceability?</li>
+</ul>
+<hr>
+</section>
+<section id="critical-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="critical-interpretation">3. Critical Interpretation</h3>
+<ul>
+<li>Could there be alternative research questions addressed with the same dataset? If so, how?</li>
+<li>Are there any additional variables you might want to collect to strengthen the experimental design or account for potential confounders?</li>
+<li>If you encountered missing or inconsistent data in these tables, how would it affect your interpretation?</li>
+<li>How do replication and sample size considerations appear (or not appear) in tidy datasets like these?</li>
+<li>How could these tables be prepared for statistical modeling (e.g., regression analysis)?</li>
+</ul>
+<hr>
+</section>
+<section id="future-application" class="level3">
+<h3 class="anchored" data-anchor-id="future-application">4. Future Application</h3>
+<ul>
+<li>In your own research, how would you apply what you’ve learned about tidy data and variable types to plan data collection?</li>
+<li>What challenges might arise when moving from narrative descriptions of experiments to data analysis-ready datasets in real-world projects?</li>
+</ul>
 </section>
 </div>
 </div>

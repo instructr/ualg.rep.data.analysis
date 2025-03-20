@@ -1,19 +1,21 @@
 ---
-title: "Week 3 | 2. Identify variables & Hands-on Tidy data"
+title: "Week 3 | 2. Identify variables & Tidy data"
 ---
 
 ::: {.callout-note}
 ## Class Details
 📅 **Date:** 20 March, 2025  
 ⏰ **Time:** 09:30h - 11:30h  
-📖 **Synopsis:** TBA  
+📖 **Synopsis:** Extract experimental details from text, format tidy tables, and reverse engineer study design from tidy tables.  
 :::
 
 </br>
 
 :::{.panel-tabset}
 
-## Experimental Designs
+## Theory
+
+### Experimental Designs
 
 #### 1. Controlled Experiment
 
@@ -73,7 +75,7 @@ title: "Week 3 | 2. Identify variables & Hands-on Tidy data"
 - **Limitations:** Limited control over variables.
 
 
-## Exercise
+## Exercise 1
 
 **Goal** | This exercise aims at training students to critically extract key experimental details from textual descriptions.
 
@@ -88,8 +90,6 @@ title: "Week 3 | 2. Identify variables & Hands-on Tidy data"
 
 ### **Example 1: Ocean Acidification on Coral Growth**
 
-**Narrative:**
-
 Researchers want to test how increased ocean acidification affects the growth of a common coral species. They set up three aquaria with seawater at different pH levels: 8.1 (current ocean pH), 7.8, and 7.5. Identical coral fragments are placed in each aquarium, and all tanks are kept under the same light and temperature conditions. After six months, they measure the calcification rate of the corals.
 
 ::: {.callout-tip collapse=true title="Solution 1 | Click to show"}
@@ -98,12 +98,11 @@ Researchers want to test how increased ocean acidification affects the growth of
 - **Independent Variable:** pH level of seawater (8.1, 7.8, 7.5)
 - **Dependent Variable:** Coral calcification rate (growth)
 - **Control Variables:** Light intensity, water temperature, coral species and fragment size, nutrient levels.
-
 :::
 
-### **Example 2: Marine Protected Areas and Fish Biodiversity**
+---
 
-**Narrative:**
+### **Example 2: Marine Protected Areas and Fish Biodiversity**
 
 A team surveys fish species diversity in 10 marine protected areas (MPAs) and compares it with 10 nearby unprotected coastal sites. Surveys are conducted using the same underwater visual census method at all locations during the same season.
 
@@ -113,12 +112,11 @@ A team surveys fish species diversity in 10 marine protected areas (MPAs) and co
 - **Independent Variable:** Protection status (MPA vs. unprotected site)
 - **Dependent Variable:** Fish species diversity (number of species observed)
 - **Control Variables:** Survey method, season, location depth, time of day surveyed.
-
 :::
 
-### **Example 3: Plastic Pollution Impact on Zooplankton**
+---
 
-**Narrative:**
+### **Example 3: Plastic Pollution Impact on Zooplankton**
 
 Scientists investigate whether microplastic concentration affects zooplankton reproduction. They prepare four tanks with different microplastic concentrations: 0 particles/mL, 10 particles/mL, 100 particles/mL, and 1,000 particles/mL. Each tank contains the same number of zooplankton individuals and is kept at constant temperature, salinity, and food availability. After two weeks, they count the number of offspring produced.
 
@@ -128,12 +126,11 @@ Scientists investigate whether microplastic concentration affects zooplankton re
 - **Independent Variable:** Microplastic concentration (0, 10, 100, 1,000 particles/mL)
 - **Dependent Variable:** Number of zooplankton offspring
 - **Control Variables:** Temperature, salinity, food availability, initial zooplankton number/species.
-
 :::
 
-### **Example 4: Algal Bloom Effects on Oxygen Levels**
+---
 
-**Narrative:**
+### **Example 4: Algal Bloom Effects on Oxygen Levels**
 
 To examine the effect of algal blooms on oxygen levels, researchers monitor dissolved oxygen in a coastal bay over six months. They record algal biomass, water temperature, and nutrient concentrations weekly. They look for correlations between algal biomass and oxygen concentration.
 
@@ -143,12 +140,11 @@ To examine the effect of algal blooms on oxygen levels, researchers monitor diss
 - **Independent Variable:** Algal biomass (measured continuously)
 - **Dependent Variable:** Dissolved oxygen concentration
 - **Control Variables:** Recording temperature and nutrient levels allows adjustment for confounding variables.
-
 :::
 
-### **Example 5: Noise Pollution Impact on Dolphin Communication**
+---
 
-**Narrative:**
+### **Example 5: Noise Pollution Impact on Dolphin Communication**
 
 Marine biologists play varying levels of ship noise recordings in a controlled enclosure housing a pod of dolphins. For each noise level (low, medium, high), they observe and record the frequency and duration of dolphin whistles. Sessions are randomized, and the dolphins have rest periods between exposures.
 
@@ -158,8 +154,233 @@ Marine biologists play varying levels of ship noise recordings in a controlled e
 - **Independent Variable:** Ship noise level (low, medium, high)
 - **Dependent Variables:** Frequency and duration of dolphin whistles
 - **Control Variables:** Same dolphin pod, rest periods, enclosure size, time of day.
-
 :::
+
+## Exercise 2
+
+**Goal** | To bridge experimental design concepts with practical data skills.
+
+**Instructions** |  After identifying the *independent*, *dependent*, and *control variables* from each "narrative", describe how the data would be organized in a tidy data table. Specifically:
+
+1. **Columns:** What variables are measured or recorded?
+2. **Rows:** What does each row represent (unit of observation)?
+3. **Variable types:** Are variables numeric or categorical?
+4. **Control variables:** How are they documented?
+
+---
+
+### Example 1: Ocean Acidification on Coral Growth
+
+::: {.callout-tip collapse=true title="Solution 1 | Click to show"}
+
+**Tidy Table Example:**
+
+| tank_id | pH | calcification_rate | light_intensity | temp_C | coral_species | nutrient_conc |
+|--------:|:--------:|-------------------:|----------------:|------------:|:-------------:|----------------------:|
+| Tank_1  |   8.1    |               2.3  |            200  |        25 | Acropora sp.  |                     3 |
+| Tank_2  |   7.8    |               1.9  |            200  |        25 | Acropora sp.  |                     3 |
+| Tank_3  |   7.5    |               1.4  |            200  |        25 | Acropora sp.  |                     3 |
+
+*Each row = one coral fragment after six months.*
+:::
+
+---
+
+### Example 2: Marine Protected Areas and Fish Biodiversity
+
+::: {.callout-tip collapse=true title="Solution 2 | Click to show"}
+
+**Tidy Table Example:**
+
+| site_id | protection_status | fish_species_count | survey_method        | season   | depth_m | time_of_day |
+|:-------:|:-----------------:|-------------------:|:--------------------:|:-------:|-------:|:----------:|
+| MPA_1   | MPA               |                25  | Visual Census        | Spring  |      10| Morning    |
+| MPA_2   | MPA               |                30  | Visual Census        | Spring  |      12| Morning    |
+| Site_1  | Unprotected       |                18  | Visual Census        | Spring  |      11| Morning    |
+| Site_2  | Unprotected       |                20  | Visual Census        | Spring  |      10| Morning    |
+
+*Each row = one survey at one site.*
+:::
+
+---
+
+### Example 3: Plastic Pollution Impact on Zooplankton
+
+::: {.callout-tip collapse=true title="Solution 3 | Click to show"}
+
+**Tidy Table Example:**
+
+| tank_id | microplastic_conc | offspring_count | temp_C | salinity | food_available | zooplankton_sp | initial_count |
+|:-------:|--------------------------:|----------------:|------------:|--------:|------------------:|:------------------:|--------------:|
+| Tank_A  | 0                         |              45 |        22 |     35  |               High| Copepod sp.        |            50 |
+| Tank_B  | 10                        |              40 |        22 |     35  |               High| Copepod sp.        |            50 |
+| Tank_C  | 100                       |              28 |        22 |     35  |               High| Copepod sp.        |            50 |
+| Tank_D  | 1000                      |              12 |        22 |     35  |               High| Copepod sp.        |            50 |
+
+*Each row = one tank's measurement.*
+:::
+
+---
+
+### Example 4: Algal Bloom Effects on Oxygen Levels
+
+::: {.callout-tip collapse=true title="Solution 4 | Click to show"}
+
+**Tidy Table Example:**
+
+| date       | algal_biomass | dissolved_oxygen | water_temp_C | nutrient_conc |
+|:----------:|-------------:|-----------------:|------------------:|----------------------:|
+| 2024-01-01 |          12.5 |              6.8 |              18.2 |                   3.1 |
+| 2024-01-08 |          15.3 |              5.4 |              18.4 |                   3.2 |
+| 2024-01-15 |          20.1 |              4.7 |              18.6 |                   3.0 |
+
+*Control variables (temperature and nutrients) are recorded alongside the key variables to control for confounding effects.*
+:::
+
+---
+
+### Example 5: Noise Pollution Impact on Dolphin Communication
+
+::: {.callout-tip collapse=true title="Solution 5 | Click to show"}
+
+**Tidy Table Example:**
+
+| session_id | noise_level | whistle_freq | whistle_duration | rest_period_min | pod_id | enclosure_size_m | time_of_day |
+|:---------:|:-----------:|------------------:|-----------------:|----------------:|:-----:|-----------------:|:----------:|
+| Sess_1    | Low         |              7500 |              2.1 |              30 | Pod_1 |               50 | Morning    |
+| Sess_2    | Medium      |              7100 |              1.8 |              30 | Pod_1 |               50 | Morning    |
+| Sess_3    | High        |              6800 |              1.4 |              30 | Pod_1 |               50 | Morning    |
+
+*Each row = one noise exposure session.*
+:::
+
+
+## Exercise 3
+
+**Goal** | To "reverse engineer" the experimental design and research question from a tidy table to build critical thinking skills.
+
+**Instructions** | In this exercise, you are given tidy data tables. Your task:
+
+1. **Interpret:** What scientific question might the researchers be asking?
+2. **Identify Variables:** Which variables are:
+    - **Independent (manipulated or compared)**
+    - **Dependent (measured outcome)**
+    - **Control (kept constant or recorded for adjustment)**
+3. **Describe Experimental Design:** Is it observational, controlled, randomized? 
+
+---
+
+### Example 1
+
+| tank_id | light_intensity | nutrient_level | temp_C | seaweed_species | biomass_increase |
+|:------:|---------------:|:--------------:|------------:|:--------------:|----------------:|
+| Tank_1 |            100  | Low            |        18 | Ulva sp.       |              4.5 |
+| Tank_2 |            100  | High           |        18 | Ulva sp.       |              8.1 |
+| Tank_3 |            200  | Low            |        18 | Ulva sp.       |              6.2 |
+| Tank_4 |            200  | High           |        18 | Ulva sp.       |             11.4 |
+
+::: {.callout-tip collapse=true title="Solution 1 | Click to show"}
+
+**Possible Research Question:**
+
+> *How do light intensity and nutrient levels affect seaweed biomass increase under controlled conditions?*
+
+**Experimental Design:**  
+Controlled laboratory factorial experiment (2x2 design: light × nutrient).
+
+**Variables:**
+
+- **Independent Variables:** `light_intensity` (100, 200), `nutrient_level` (Low, High)
+- **Dependent Variable:** `biomass_increase`
+- **Control Variables:** `temperature`, `seaweed_species` (constant across tanks)
+:::
+
+---
+
+### Example 2
+
+| site_id | fishing_pressure | depth_m | habitat_type | survey_method | shark_count |
+|:------:|:----------------:|-------:|:------------:|:-------------:|-----------:|
+| Site_A | High             |     25 | Reef         | Baited Camera |         3  |
+| Site_B | Low              |     25 | Reef         | Baited Camera |         8  |
+| Site_C | High             |     30 | Sandy        | Baited Camera |         2  |
+| Site_D | Low              |     30 | Sandy        | Baited Camera |         6  |
+
+::: {.callout-tip collapse=true title="Solution 2 | Click to show"}
+**Possible Research Question:**
+
+> *Is shark abundance lower in areas with high fishing pressure compared to low fishing pressure areas?*
+
+**Experimental Design:**  
+Observational comparative study (across sites).
+
+**Variables:**
+
+- **Independent Variable:** `fishing_pressure` (High, Low)
+- **Dependent Variable:** `shark_count`
+- **Control Variables:** `depth_m`, `habitat_type`, `survey_method` (standardized across sites)
+:::
+
+---
+
+### Example 3
+
+| sample_id | salinity | temp_C | sample_depth_m | chlorophyll_conc | plankton_sp_count |
+|:--------:|--------:|------------:|--------------:|-------------------------:|----------------------:|
+| Sample_1 |     30  |        22 |             5 |                      2.5  |                     15 |
+| Sample_2 |     35  |        22 |             5 |                      3.1  |                     18 |
+| Sample_3 |     40  |        22 |             5 |                      4.2  |                     12 |
+| Sample_4 |     45  |        22 |             5 |                      4.8  |                      9 |
+
+::: {.callout-tip collapse=true title="Solution 3 | Click to show"}
+**Possible Research Question:**
+
+> *How does salinity influence plankton species diversity in coastal waters?*
+
+**Experimental Design:**  
+Observational gradient study.
+
+**Variables:**
+
+- **Independent Variable:** `salinity` (continuous gradient)
+- **Dependent Variable:** `plankton_species_count`
+- **Control Variables:** `temperature`, `sample_depth_m`, `chlorophyll_concentration` (recorded)
+:::
+
+## Food for thought
+
+### 1. Experimental Design & Variables
+
+  - What information helps you distinguish between independent, dependent, and control variables?
+  - How can you tell whether a study is controlled, randomized, or observational based solely on the dataset?
+  - Why is it important to clearly document control variables, even if they are kept constant?
+  - In some examples, more than one independent variable is manipulated. How would you recognize and interpret this factorial design?
+  - How might confounding variables influence the results if not properly controlled?
+
+---
+
+### 2. Tidy Data Structure
+
+  - Why is it useful to structure experimental data in a tidy format (one variable per column, one observation per row)?
+  - What could go wrong in analysis or visualization if data were not kept in tidy format?
+  - How do identifiers like `tank_id`, `site_id`, or `session_id` help maintain data clarity and traceability?
+
+---
+
+### 3. Critical Interpretation
+
+  - Could there be alternative research questions addressed with the same dataset? If so, how?
+  - Are there any additional variables you might want to collect to strengthen the experimental design or account for potential confounders?
+  - If you encountered missing or inconsistent data in these tables, how would it affect your interpretation?
+  - How do replication and sample size considerations appear (or not appear) in tidy datasets like these?
+  - How could these tables be prepared for statistical modeling (e.g., regression analysis)?
+
+---
+
+### 4. Future Application
+
+  - In your own research, how would you apply what you’ve learned about tidy data and variable types to plan data collection?
+  - What challenges might arise when moving from narrative descriptions of experiments to data analysis-ready datasets in real-world projects?
 
 :::
 
