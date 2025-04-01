@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 4 | TBA – Reproducible Data Analysis Course</title>
+<title>Week 4 | 3. Exploratory analysis – Reproducible Data Analysis Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week4.html">
- <span class="dropdown-text">Week 4 | TBA</span></a>
+ <span class="dropdown-text">Week 4 | 3. Exploratory analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week5.html">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 4 | TBA</h1>
+<h1 class="title">Week 4 | 3. Exploratory analysis</h1>
 </div>
 
 
@@ -210,8 +210,129 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Class Details
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>📅 <strong>Date:</strong> 20 March, 2025<br>
+⏰ <strong>Time:</strong> 09:30h - 11:30h (+2h) 📖 <strong>Synopsis:</strong> Extract experimental details from text, format tidy tables, and reverse engineer study design from tidy tables.</p>
+</div>
+</div>
+<p><br></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Done in Class</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">To Do at Home</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<blockquote class="blockquote">
+<p>Now my data is tidy. What to do next?</p>
+</blockquote>
+<ol type="1">
+<li><p><strong>Create a directory for the task of writing a data descriptor paper.</strong><br>
+It should have the following structure:</p>
+<p>data_descriptor_paper/<br>
+├── data/<br>
+│ ├── raw/<br>
+│ └── processed/<br>
+├── scripts/<br>
+├── output/<br>
+└── sandbox/</p></li>
+</ol>
+<ul>
+<li><strong>data_descriptor_paper</strong>: root folder for the Rproject<br>
+</li>
+<li><strong>data/raw</strong>: original, unmodified data<br>
+</li>
+<li><strong>data/processed</strong>: cleaned or transformed data ready for analysis<br>
+</li>
+<li><strong>scripts</strong>: code for processing and analysis<br>
+</li>
+<li><strong>output</strong>: figures, tables, and final results<br>
+</li>
+<li><strong>sandbox</strong>: exploratory or temporary work (to be git ignored)</li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Create an RStudio project</strong></li>
+</ol>
+<p>Create a new RStudio project in the root folder (<code>data_descriptor_paper</code>).<br>
+If available, check the option to initialize a Git repository when creating the project.</p>
+<ol start="3" type="1">
+<li><strong>If Git was not initialized</strong></li>
+</ol>
+<p>If you didn’t initialize Git during project setup, open the <strong>Terminal</strong> tab in RStudio and run: <code>git init</code></p>
+<ol start="4" type="1">
+<li><strong>Create a GitHub repository</strong></li>
+</ol>
+<ul>
+<li>Choose a short, informative name specific to your project.</li>
+<li>Create an <strong>empty</strong> repository (no README, no license).</li>
+<li>Set it to <strong>private</strong>, especially if working with sensitive data.</li>
+</ul>
+<p>A simple Git overview is available here:<br>
+<a href="https://github.com/iduarte/git-tutorial/blob/master/GitHub-Workshop.md" class="uri">https://github.com/iduarte/git-tutorial/blob/master/GitHub-Workshop.md</a></p>
+<ol start="5" type="1">
+<li><strong>Connect your local Git repository to GitHub</strong></li>
+</ol>
+<p>To push/pull your local repo to GitHub you must set up a <strong>Personal Access Token (PAT)</strong> or configure <strong>SSH keys</strong> for authentication.</p>
+<ul>
+<li>Guide to add a <strong>PAT</strong> to your GitHub account: <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" class="uri">https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens</a></li>
+<li>Guide to add <strong>SSH keys</strong> to your GitHub account:<br>
+<a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows" class="uri">https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows</a></li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Before the next class, please complete the following tasks:</p>
+<ol type="1">
+<li><p><strong>Create a metadata file</strong> that describes each variable in your tidy dataset.</p></li>
+<li><p><strong>Decide whether to use plain R scripts or R Markdown files for your analysis.</strong><br>
+Note: R Markdown (.Rmd) is an example of literate programming - a technique that combines code with explanatory text. It allows both analysis and documentation within a single file, making it a popular format for reproducible research.<br>
+Once you’ve chosen your format, complete the remaining tasks using that file type. Be sure to annotate your code clearly and commit changes regularly to your local Git repository.</p></li>
+<li><p><strong>Summarize your dataset with descriptive statistics.</strong><br>
+Propose effective ways to present and visualize this information. Would tables or plots work best? What approaches do other papers use?</p></li>
+<li><p><strong>Perform data quality control and validate the experimental design.</strong><br>
+Use Principal Component Analysis (PCA) to identify major sources of variation.</p>
+<ul>
+<li>What is PCA and why is it useful?</li>
+<li>Can categorical variables be used in PCA? If so, how? Is numeric encoding appropriate?</li>
+<li>How should tidy data be formatted for PCA in R?</li>
+<li>What additional quality control or validation strategies are used in published work?</li>
+</ul></li>
+<li><p><strong>Examine univariate distributions of all variables.</strong></p>
+<ul>
+<li>Which plot types are best for each variable type?</li>
+<li>Are there innovative visualization methods to consider?</li>
+<li>What do published studies use?</li>
+</ul></li>
+<li><p><strong>Visualize pairwise (bivariate) relationships between variables.</strong></p>
+<ul>
+<li>How can all variable pairs be visualized in a space efficient way, that is both informative and pleasant?</li>
+<li>Is this approach informative? Why or why not?</li>
+</ul></li>
+<li><p><strong>Download the Scientific Data Descriptor template.</strong></p>
+<ul>
+<li>Visit: <a href="https://www.nature.com/documents/scidata-data-descriptor-document-template.docx" class="uri">https://www.nature.com/documents/scidata-data-descriptor-document-template.docx</a><br>
+</li>
+<li>Review the template.</li>
+<li>The purpose here is to understand a data descriptor structure and the type of information expected in each section.</li>
+</ul></li>
+<li><p><strong>Select a Scientific Data Descriptor paper to read and discuss in the next class.</strong></p>
+<ul>
+<li>Go to: <a href="https://www.nature.com/sdata" class="uri">https://www.nature.com/sdata</a> and find a recent paper related to your area of interest.<br>
+</li>
+<li>Read it critically and prepare a 5-minute summary to present in the next class.</li>
+<li>The purpose here is to learn by example: What do other papers reporting data look like?</li>
+</ul></li>
+</ol>
 
 
+</div>
+</div>
+</div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

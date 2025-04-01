@@ -1,3 +1,109 @@
 ---
-title: "Week 4 | TBA"
+title: "Week 4 | 3. Exploratory analysis"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 20 March, 2025  
+⏰ **Time:** 09:30h - 11:30h  (+2h)
+📖 **Synopsis:** Extract experimental details from text, format tidy tables, and reverse engineer study design from tidy tables.  
+:::
+
+</br>
+
+:::{.panel-tabset}
+
+## Done in Class
+
+> Now my data is tidy. What to do next?
+
+1. **Create a directory for the task of writing a data descriptor paper.**   
+It should have the following structure:
+
+    data_descriptor_paper/    
+    ├── data/    
+    │ ├── raw/    
+    │ └── processed/   
+    ├── scripts/    
+    ├── output/    
+    └── sandbox/   
+
++ **data_descriptor_paper**: root folder for the Rproject    
++ **data/raw**: original, unmodified data   
++ **data/processed**: cleaned or transformed data ready for analysis   
++ **scripts**: code for processing and analysis   
++ **output**: figures, tables, and final results   
++ **sandbox**: exploratory or temporary work (to be git ignored)   
+
+
+2. **Create an RStudio project**
+
+Create a new RStudio project in the root folder (`data_descriptor_paper`).  
+If available, check the option to initialize a Git repository when creating the project.
+
+3. **If Git was not initialized**
+
+If you didn’t initialize Git during project setup, open the **Terminal** tab in RStudio and run:
+`git init` 
+
+
+4. **Create a GitHub repository**
+
+- Choose a short, informative name specific to your project.
+- Create an **empty** repository (no README, no license).
+- Set it to **private**, especially if working with sensitive data.
+
+A simple Git overview is available here:  
+<https://github.com/iduarte/git-tutorial/blob/master/GitHub-Workshop.md>
+
+5. **Connect your local Git repository to GitHub**
+
+To push/pull your local repo to GitHub you must set up a **Personal Access Token (PAT)** or configure **SSH keys** for authentication.
+
+- Guide to add a **PAT** to your GitHub account: <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>
+- Guide to add **SSH keys** to your GitHub account:  
+<https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows>
+
+
+## To Do at Home
+
+Before the next class, please complete the following tasks:
+
+1. **Create a metadata file** that describes each variable in your tidy dataset.
+
+2. **Decide whether to use plain R scripts or R Markdown files for your analysis.**   
+  Note: R Markdown (.Rmd) is an example of literate programming - a technique that combines code with explanatory text. It allows both analysis and documentation within a single file, making it a popular format for reproducible research.   
+  Once you’ve chosen your format, complete the remaining tasks using that file type. Be sure to annotate your code clearly and commit changes regularly to your local Git repository.
+
+3. **Summarize your dataset with descriptive statistics.**  
+   Propose effective ways to present and visualize this information. Would tables or plots work best? What approaches do other papers use?
+
+4. **Perform data quality control and validate the experimental design.**  
+   Use Principal Component Analysis (PCA) to identify major sources of variation.
+   - What is PCA and why is it useful?
+   - Can categorical variables be used in PCA? If so, how? Is numeric encoding appropriate?
+   - How should tidy data be formatted for PCA in R?
+   - What additional quality control or validation strategies are used in published work?
+
+5. **Examine univariate distributions of all variables.**  
+   - Which plot types are best for each variable type?
+   - Are there innovative visualization methods to consider?
+   - What do published studies use?
+
+6. **Visualize pairwise (bivariate) relationships between variables.**  
+   - How can all variable pairs be visualized in a space efficient way, that is both informative and pleasant?
+   - Is this approach informative? Why or why not?
+
+
+7. **Download the Scientific Data Descriptor template.**  
+   - Visit: <https://www.nature.com/documents/scidata-data-descriptor-document-template.docx>  
+   - Review the template.
+   - The purpose here is to understand a data descriptor structure and the type of information expected in each section.
+
+8. **Select a Scientific Data Descriptor paper to read and discuss in the next class.**  
+   - Go to: <https://www.nature.com/sdata> and find a recent paper related to your area of interest.  
+   - Read it critically and prepare a 5-minute summary to present in the next class.
+   - The purpose here is to learn by example: What do other papers reporting data look like?
+
+  
+  
