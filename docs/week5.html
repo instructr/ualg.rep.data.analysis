@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 5 | TBA – Reproducible Data Analysis Course</title>
+<title>Week 5 | 3.1 Exploratory analysis critique – Reproducible Data Analysis Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,15 +110,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week3.html">
- <span class="dropdown-text">Week 3 | 2. Identify variables &amp; Tidy data</span></a>
+ <span class="dropdown-text">Week 3 | 2.1 Identify variables &amp; Tidy data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week4.html">
- <span class="dropdown-text">Week 4 | TBA</span></a>
+ <span class="dropdown-text">Week 4 | 3. Exploratory analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week5.html">
- <span class="dropdown-text">Week 5 | TBA</span></a>
+ <span class="dropdown-text">Week 5 | 3.1 Exploratory analysis critique</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week6.html">
@@ -193,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 5 | TBA</h1>
+<h1 class="title">Week 5 | 3.1 Exploratory analysis critique</h1>
 </div>
 
 
@@ -210,8 +210,161 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Class Details
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>📅 <strong>Date:</strong> 08 April, 2025<br>
+⏰ <strong>Time:</strong> 09:30h - 12:00h<br>
+📖 <strong>Synopsis:</strong> Metadata documentation, data visualization for validation, critical review of scientific datasets and their publications.</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Done in Class</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">To Do at Home</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="metadata-files" class="level4">
+<h4 class="anchored" data-anchor-id="metadata-files"><strong>1. Metadata Files</strong></h4>
+<ul>
+<li><strong>Discussion Topics:</strong>
+<ul>
+<li>What is a metadata file, and why is it important for reproducibility?</li>
+<li><strong>Minimum information to include</strong>:
+<ul>
+<li>Variable names and descriptions</li>
+<li>Units of measurement</li>
+<li>Data types (e.g., numeric, categorical)</li>
+<li>Valid value ranges</li>
+<li>Missing value encoding</li>
+</ul></li>
+<li><strong>Encoding not applicable or missing values</strong>:
+<ul>
+<li>Use standard codes (e.g., <code>NA</code>, <code>null</code>, or defined codes like <code>999</code>), and document them clearly</li>
+</ul></li>
+<li><strong>Categorical variables</strong>:
+<ul>
+<li>Define all possible levels</li>
+<li>Include labels or descriptions for each level, if acronym is being used</li>
+</ul></li>
+<li><strong>Best practices</strong>:
+<ul>
+<li>Keep metadata in a separate, human-readable file (e.g., CSV, TXT)</li>
+<li>Use consistent naming between metadata and data files</li>
+<li>Regularly update metadata as data evolves</li>
+</ul></li>
+</ul></li>
+<li><strong>Activity</strong>:
+<ul>
+<li>Analyze and discuss a <strong>good example</strong> of data and metadata from a Figshare dataset record (<a href="https://smithsonian.figshare.com/articles/dataset/Dataset_Carbon_stocks_and_environmental_driver_data_for_blue_carbon_ecosystems_along_the_Pacific_coast_of_North_America/28127486">Link here</a>).</li>
+<li>Look at the paper that analysis the dataset above: (<a href="https://doi.org/10.1029/2024GB008239">Link here</a>)</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="principal-component-analysis-pca" class="level4">
+<h4 class="anchored" data-anchor-id="principal-component-analysis-pca"><strong>2. Principal Component Analysis (PCA)</strong></h4>
+<ul>
+<li><strong>Discussion Topics:</strong>
+<ul>
+<li>Can categorical variables be included in PCA?
+<ul>
+<li>Generally, PCA is for <strong>continuous variables</strong></li>
+<li>Categorical variables need to be <strong>encoded numerically</strong> (e.g., one-hot encoding), which may affect interpretation</li>
+<li>Consider alternative techniques like <strong>Multiple Correspondence Analysis (MCA)</strong> for purely categorical data</li>
+</ul></li>
+</ul></li>
+<li><strong>Resource</strong>:
+<ul>
+<li>Watch and evaluate <strong>StatQuest video on PCA</strong> (<a href="https://www.youtube.com/watch?v=FgakZw6K1QQ">Link here</a>)</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="visualizing-distributions-of-variables" class="level4">
+<h4 class="anchored" data-anchor-id="visualizing-distributions-of-variables"><strong>3. Visualizing Distributions of Variables</strong></h4>
+<ul>
+<li><p><strong>What to look for in plots</strong>:</p>
+<ul>
+<li>Outliers</li>
+<li>Skewness or symmetry</li>
+<li>Bimodal or multimodal distributions</li>
+<li>Unexpected patterns or values</li>
+</ul></li>
+<li><p><strong>Questions to ask when selecting plots</strong>:</p>
+<ul>
+<li>What story does this plot tell? What information does it convey? Is this information what I am aiming to show?</li>
+<li>Is the plot relevant to the hypothesis or goal of my analysis?</li>
+<li>Is it easy to interpret by the target audience?</li>
+<li>Are there simpler visualizations for this variable? “Less is more!”</li>
+<li>Use previous results/plots/analyses to inform which plots to show next, and keep in the main text versus sending to supplementary material.</li>
+</ul></li>
+<li><p><strong>Data validation through visualization</strong>:</p>
+<ul>
+<li>Identify data entry errors or inconsistencies</li>
+<li>Spot missing or unusual values</li>
+<li>Confirm assumptions (e.g., normality, bimodality…)</li>
+<li>Help ensure robusteness and reliability</li>
+<li>Whenever possible, show all data points (Transparency is key for reproducibility)</li>
+</ul></li>
+<li><p><strong>Choose your plots wisely!</strong></p>
+<p>Useful online galleries of plots, per type of data or information to be displayed:</p>
+<ul>
+<li>Includes R code for all plots: <a href="https://www.data-to-viz.com/">from Data to Viz</a></li>
+<li><a href="https://ft-interactive.github.io/visual-vocabulary/">Visual vocabulary</a></li>
+<li><a href="https://chart.guide/design/">The Do’s of chart design</a></li>
+<li><a href="https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary">Finantial Times: Chart-Doctor</a></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="critical-review-of-nature-scientific-data-papers" class="level4">
+<h4 class="anchored" data-anchor-id="critical-review-of-nature-scientific-data-papers"><strong>4. Critical Review of Nature Scientific Data Papers</strong></h4>
+<ul>
+<li><strong>Papers for student-led discussion</strong>:
+<ul>
+<li>Paper 1: <em>High-quality genome assembly of the azooxanthellate coral Tubastraea coccinea (Lesson, 1829)</em><br>
+<a href="https://doi.org/10.1038/s41597-025-04839-7">DOI: https://doi.org/10.1038/s41597-025-04839-7</a><br>
+</li>
+<li>Paper 2: <em>Seagrass morphometrics at species level in Moreton Bay, Australia from 2012 to 2013</em><br>
+<a href="https://doi.org/10.1038/sdata.2017.60">DOI: https://doi.org/10.1038/sdata.2017.60</a></li>
+</ul></li>
+<li><strong>Guiding questions for critical review of a data descriptor article</strong>:
+<ol type="1">
+<li>Did the authors successfully show the relevance of their data to their scientific community?</li>
+<li>Is the data of high quality?</li>
+<li>Are all visualizations necessary and informative?
+<ul>
+<li>Are they easy to interpret?</li>
+<li>Are they well-described?</li>
+</ul></li>
+<li>Is any crucial information, about the data or the experimental design, missing?</li>
+<li>Would you feel confident using this dataset in a new analysis? Why? Why not?</li>
+</ol></li>
+</ul>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li><p>Experimental Design figure, in vectorial format (pdf, eps, svg).</p></li>
+<li><p>Next Week, each student will receive <em>individual</em> R code review and feedback. Focus areas will be:</p>
+<ul>
+<li>Code <strong>correctness</strong> and clarity;</li>
+<li><strong>Annotation</strong> and commenting practices;</li>
+<li>Use of <strong>literate programming</strong> (e.g., R Markdown);</li>
+<li>Adherence to <strong>best practices</strong> in reproducible research workflows (Git).</li>
+</ul></li>
+</ol>
 
 
+</div>
+</div>
+</div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

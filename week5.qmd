@@ -1,3 +1,115 @@
 ---
-title: "Week 5 | TBA"
+title: "Week 5 | 3.1 Exploratory analysis critique"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 08 April, 2025  
+⏰ **Time:** 09:30h - 12:00h   
+📖 **Synopsis:** Metadata documentation, data visualization for validation, critical review of scientific datasets and their publications.    
+:::
+
+
+:::{.panel-tabset}
+
+### Done in Class
+
+#### **1. Metadata Files**
+
+- **Discussion Topics:**
+  - What is a metadata file, and why is it important for reproducibility?
+  - **Minimum information to include**:
+    - Variable names and descriptions
+    - Units of measurement
+    - Data types (e.g., numeric, categorical)
+    - Valid value ranges
+    - Missing value encoding
+  - **Encoding not applicable or missing values**:
+    - Use standard codes (e.g., `NA`, `null`, or defined codes like `999`), and document them clearly
+  - **Categorical variables**:
+    - Define all possible levels
+    - Include labels or descriptions for each level, if acronym is being used
+  - **Best practices**:
+    - Keep metadata in a separate, human-readable file (e.g., CSV, TXT)
+    - Use consistent naming between metadata and data files
+    - Regularly update metadata as data evolves
+
+- **Activity**:
+  - Analyze and discuss a **good example** of data and metadata from a Figshare dataset record ([Link here](https://smithsonian.figshare.com/articles/dataset/Dataset_Carbon_stocks_and_environmental_driver_data_for_blue_carbon_ecosystems_along_the_Pacific_coast_of_North_America/28127486)).
+  - Look at the paper that analysis the dataset above: ([Link here](https://doi.org/10.1029/2024GB008239))
+
+---
+
+#### **2. Principal Component Analysis (PCA)**
+
+- **Discussion Topics:**
+  - Can categorical variables be included in PCA?
+    - Generally, PCA is for **continuous variables**
+    - Categorical variables need to be **encoded numerically** (e.g., one-hot encoding), which may affect interpretation
+    - Consider alternative techniques like **Multiple Correspondence Analysis (MCA)** for purely categorical data
+
+- **Resource**:
+  - Watch and evaluate **StatQuest video on PCA** ([Link here](https://www.youtube.com/watch?v=FgakZw6K1QQ))  
+
+---
+
+#### **3. Visualizing Distributions of Variables**
+
+- **What to look for in plots**:
+  - Outliers
+  - Skewness or symmetry
+  - Bimodal or multimodal distributions
+  - Unexpected patterns or values
+
+- **Questions to ask when selecting plots**:
+  - What story does this plot tell? What information does it convey? Is this information what I am aiming to show?
+  - Is the plot relevant to the hypothesis or goal of my analysis?
+  - Is it easy to interpret by the target audience?
+  - Are there simpler visualizations for this variable? "Less is more!"
+  - Use previous results/plots/analyses to inform which plots to show next, and keep in the main text versus sending to supplementary material.
+
+- **Data validation through visualization**:
+  - Identify data entry errors or inconsistencies
+  - Spot missing or unusual values
+  - Confirm assumptions (e.g., normality, bimodality...)
+  - Help ensure robusteness and reliability
+  - Whenever possible, show all data points (Transparency is key for reproducibility)
+
+- **Choose your plots wisely!**
+
+  Useful online galleries of plots, per type of data or information to be displayed:
+
+  - Includes R code for all plots: [from Data to Viz](https://www.data-to-viz.com/)
+  - [Visual vocabulary](https://ft-interactive.github.io/visual-vocabulary/)
+  - [The Do's of chart design](https://chart.guide/design/)
+  - [Finantial Times: Chart-Doctor](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+
+---
+
+#### **4. Critical Review of Nature Scientific Data Papers**
+
+- **Papers for student-led discussion**:
+  - Paper 1: *High-quality genome assembly of the azooxanthellate coral Tubastraea coccinea (Lesson, 1829)*    
+  [DOI: https://doi.org/10.1038/s41597-025-04839-7](https://doi.org/10.1038/s41597-025-04839-7)  
+  - Paper 2: *Seagrass morphometrics at species level in Moreton Bay, Australia from 2012 to 2013*    
+  [DOI: https://doi.org/10.1038/sdata.2017.60](https://doi.org/10.1038/sdata.2017.60)
+
+- **Guiding questions for critical review of a data descriptor article**:
+  1. Did the authors successfully show the relevance of their data to their scientific community?
+  2. Is the data of high quality?
+  3. Are all visualizations necessary and informative?
+     - Are they easy to interpret?
+     - Are they well-described?
+  4. Is any crucial information, about the data or the experimental design, missing?
+  5. Would you feel confident using this dataset in a new analysis? Why? Why not?
+
+
+### To Do at Home
+
+1. Experimental Design figure, in vectorial format (pdf, eps, svg).
+
+2. Next Week, each student will receive *individual* R code review and feedback. Focus areas will be:
+    - Code **correctness** and clarity;
+    - **Annotation** and commenting practices;
+    - Use of **literate programming** (e.g., R Markdown);
+    - Adherence to **best practices** in reproducible research workflows (Git).

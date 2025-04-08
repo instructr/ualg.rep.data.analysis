@@ -4,9 +4,9 @@ title: "Week 4 | 3. Exploratory analysis"
 
 ::: {.callout-note}
 ## Class Details
-📅 **Date:** 20 March, 2025  
+📅 **Date:** 01 April, 2025  
 ⏰ **Time:** 09:30h - 11:30h  (+2h)
-📖 **Synopsis:** Extract experimental details from text, format tidy tables, and reverse engineer study design from tidy tables.  
+📖 **Synopsis:** **Synopsis:** Organized data analysis project with a clear folder structure, set up an RStudio project with Git, and connected it to GitHub for version control and collaboration.  
 :::
 
 </br>
