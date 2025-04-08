@@ -108,8 +108,20 @@ title: "Week 5 | 3.1 Exploratory analysis critique"
 
 1. Experimental Design figure, in vectorial format (pdf, eps, svg).
 
-2. Next Week, each student will receive *individual* R code review and feedback. Focus areas will be:
-    - Code **correctness** and clarity;
-    - **Annotation** and commenting practices;
-    - Use of **literate programming** (e.g., R Markdown);
-    - Adherence to **best practices** in reproducible research workflows (Git).
+**Top Tips for an Experimental Design Figure**
+
+  - Keep it **simple and clear**  
+  - Show the **workflow or timeline** of the experiment  
+  - Include key elements: **groups, treatments, time points, sample sizes**  
+  - Use **consistent labels and colors**  
+  - Make sure it's **readable and matches the methods**  
+  - Export as a **vector (PDF/SVG)** for best quality  
+
+
+2. Next Week, each student will receive *individual* R code review. Please complete and format your R code, to the best of your current ability. Focus areas for next week's feedback will be:
+    - Code **correctness** and clarity
+    - **Annotation** and commenting practices
+    - Proper use of **literate programming** (e.g., R Markdown)
+    - Adherence to **best practices** in reproducible research workflows (Git)
+    
+Please make notes of any difficulties and questions to guide our discussion next week.
