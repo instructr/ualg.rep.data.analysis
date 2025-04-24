@@ -11,7 +11,7 @@
     "href": "week7.html",
     "title": "Week 7 | TBA",
     "section": "",
-    "text": "Back to top"
+    "text": "Class Details\n\n\n\n📅 Date: 29 April, 2025\n⏰ Time: 09:30h - 12:00h\n📖 Synopsis: TBA\n\n\n\nDone in ClassTo Do at Home\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "sandbox/week1_tabs.html",
@@ -44,9 +44,9 @@
   {
     "objectID": "week6.html",
     "href": "week6.html",
-    "title": "Week 6 | TBA",
+    "title": "Week 6 | 4. R Code review & Experimental Design Figure",
     "section": "",
-    "text": "Back to top"
+    "text": "Class Details\n\n\n\n📅 Date: 15 & 16 April, 2025\n⏰ Time: 3h (with each student)\n📖 Synopsis: Individual sessions focused on reviewing R code and advising on script modularization, function creation, and best practices for data analysis. Critical reviewing of experimental design figure.\n\n\n\nDone in ClassTo Do at Home\n\n\nCode Structure, Reproducibility, and Experimental Design\n\nReviewed and critically evaluated each student’s experimental design figure from the previous week’s assignment. Feedback focused on improving clarity, completeness, and informativeness. Students were asked to revise the figure by incorporating missing elements and ensuring alignment with their analytical goals.\nProvided guidance on transitioning from monolithic scripts to a modular workflow:\n\nSeparate scripts by purpose: data import, cleaning, analysis (per question, per model, per dataset, etc), visualization.\nName and organize scripts consistently to reflect their role in the pipeline.\n\nDiscussed when and how to define custom functions:\n\nIdentify repeated or logically distinct code blocks.\nEnsure functions are self-contained, well-documented, and generalizable.\n\nOutlined best practices for reproducible data analysis:\n\nUse version control (e.g., Git) to track changes and collaborate efficiently.\nStructure the project directory with clear input/output folders and relative paths.\nDocument all steps using literate programming tools (e.g., R Markdown).\nAvoid hardcoding values; use parameters and explicit variabkes at the beginning of the script.\n\nEmphasized the importance of treating each analysis project as a reproducible research product that can be understood and re-executed by your “future self”, and others, including collaborators or reviewers.\n\n\n\nFor next class\nPlease work on the following tasks to prepare for our next discussion and continue developing your project:\n\nUpdate the experimental design figure\nRevise your experimental design figure based on our latest discussions, making sure it accurately reflects your current project setup. In the next class, we will revisit it together for further refinements and identify any final adjustments. Be mindful of where and how you save this figure—like your code, figures should be reproducible and version-controlled. Save yourself future frustration by staying organized now.\nStart drafting your scientific data manuscript\nBegin shaping your manuscript by drafting the title, introduction/background, methods, and technical validation sections—these form the foundation of your narrative. Leave the abstract for last, as it is easier to write once the full story is clear.\n\nBe your own toughest reviewer: assess your writing for clarity, coherence, and completeness.\n\nUse the provided manuscript template and study other published examples in your field to understand the tone and structure expected.\n\nDecide where and how you’ll store and edit your manuscript: Is it a collaborative document (e.g. Google docs)? Which software will you use to write it? How abaout version control and backup of the document?\nPlan how you will manage references: which citation software will you use, and is your library updated for seamless integration?\n\nTaking the time now to address these workflow details will ensure a smoother and more reproducible writing process later.\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "calendar.html",

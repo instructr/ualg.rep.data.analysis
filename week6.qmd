@@ -1,3 +1,55 @@
 ---
-title: "Week 6 | TBA"
+title: "Week 6 | 4. R Code review & Experimental Design Figure"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 15 & 16 April, 2025  
+⏰ **Time:** 3h (with each student)   
+📖 **Synopsis:** Individual sessions focused on reviewing R code and advising on script modularization, function creation, and best practices for data analysis. Critical reviewing of experimental design figure.     
+:::
+
+:::{.panel-tabset}
+
+### Done in Class
+
+**Code Structure, Reproducibility, and Experimental Design**
+
+- Reviewed and critically evaluated each student's experimental design figure from the previous week's assignment. Feedback focused on improving clarity, completeness, and informativeness. Students were asked to revise the figure by incorporating missing elements and ensuring alignment with their analytical goals.
+
+- Provided guidance on transitioning from monolithic scripts to a modular workflow:
+  - Separate scripts by purpose: data import, cleaning, analysis (per question, per model, per dataset, etc), visualization.
+  - Name and organize scripts consistently to reflect their role in the pipeline.
+
+- Discussed when and how to define custom functions:
+  - Identify repeated or logically distinct code blocks.
+  - Ensure functions are self-contained, well-documented, and generalizable.
+
+- Outlined best practices for reproducible data analysis:
+  - Use version control (e.g., Git) to track changes and collaborate efficiently.
+  - Structure the project directory with clear input/output folders and relative paths.
+  - Document all steps using literate programming tools (e.g., R Markdown).
+  - Avoid hardcoding values; use parameters and explicit variabkes at the beginning of the script.
+
+- Emphasized the importance of treating each analysis project as a reproducible research product that can be understood and re-executed by your "future self", and others, including collaborators or reviewers.
+
+
+### To Do at Home
+
+**For next class**
+
+Please work on the following tasks to prepare for our next discussion and continue developing your project:
+
+1. **Update the experimental design figure**  
+   Revise your experimental design figure based on our latest discussions, making sure it accurately reflects your current project setup. In the next class, we will revisit it together for further refinements and identify any final adjustments. Be mindful of where and how you save this figure—like your code, figures should be reproducible and version-controlled. Save yourself future frustration by staying organized now.
+
+2. **Start drafting your scientific data manuscript**  
+   Begin shaping your manuscript by drafting the title, introduction/background, methods, and technical validation sections—these form the foundation of your narrative. Leave the abstract for last, as it is easier to write once the full story is clear.  
+   
+   - **Be your own toughest reviewer**: assess your writing for clarity, coherence, and completeness.  
+   - **Use the provided manuscript template** and study other published examples in your field to understand the tone and structure expected.  
+   - **Decide where and how you’ll store and edit your manuscript**: Is it a collaborative document (e.g. Google docs)? Which software will you use to write it? How abaout version control and backup of the document?
+   - **Plan how you will manage references**: which citation software will you use, and is your library updated for seamless integration?  
+   
+   Taking the time now to address these workflow details will ensure a smoother and more reproducible writing process later.
+

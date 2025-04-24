@@ -1,3 +1,17 @@
 ---
 title: "Week 7 | TBA"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 29 April, 2025  
+⏰ **Time:** 09:30h - 12:00h   
+📖 **Synopsis:** TBA     
+:::
+
+
+:::{.panel-tabset}
+
+### Done in Class
+
+### To Do at Home
