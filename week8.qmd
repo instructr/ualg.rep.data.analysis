@@ -6,7 +6,7 @@ title: "Week 8 | TBA"
 ## Class Details
 📅 **Date:** 14 May, 2025  
 ⏰ **Time:** 14:00h - 16:00h   
-📖 **Synopsis:** TBA     
+📖 **Synopsis:** One-on-one meeting focused on receiving feedback on the manuscript draft, the R code used for data analysis, interpretation of results, and adherence to best practices for reproducible research.      
 :::
 
 :::{.panel-tabset}
