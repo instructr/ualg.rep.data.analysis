@@ -4,9 +4,9 @@ title: "Week 7 | TBA"
 
 ::: {.callout-note}
 ## Class Details
-📅 **Date:** 29 April, 2025  
-⏰ **Time:** 09:30h - 12:00h   
-📖 **Synopsis:** TBA     
+📅 **Date:** 02 May, 2025  
+⏰ **Time:** 14:30h - 16:30h   
+📖 **Synopsis:** Evaluation of the experimental design figure, and providing feedback on best practices for reproducible manuscript writing.      
 :::
 
 
@@ -14,4 +14,15 @@ title: "Week 7 | TBA"
 
 ### Done in Class
 
+* Reviewed the experimental design figure for clarity, completeness, and logical flow.
+* Assessed whether the figure effectively communicates the study’s objectives, data collection timeline, and key variables.
+* Identified areas for improvement in visual presentation and labeling.
+* Discussed common pitfalls and best practices in designing figures for clarity and aesthetics.
+* Provided feedback on how to align the figure with the narrative of the manuscript.
+* Shared guidelines for reproducible manuscript writing, emphasizing the importance of collaborative documents, narrative structure, version control, and appropriate citation of tools.
+
 ### To Do at Home
+
+1. Continue writing the *Scientific Data* manuscript that describes the dataset analyzed throughout the course.
+2. Clean up and reformat the *data analysis scripts*, following the best practices discussed in earlier classes.
+

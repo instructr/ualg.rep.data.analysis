@@ -1,3 +1,38 @@
 ---
 title: "Week 8 | TBA"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 14 May, 2025  
+⏰ **Time:** 14:00h - 16:00h   
+📖 **Synopsis:** TBA     
+:::
+
+:::{.panel-tabset}
+
+### Done in Class
+
+![](pics/types_of_models.png)
+![](pics/categories_of_models.png)
+
+### To Do at Home
+
+Particular tasks for BB
+
+1. **Refactor the data analysis script** by splitting the current single script into two separate scripts: one for *Descriptive Analysis* and one for *Modeling*.
+
+2. **Apply the following changes to the data analysis scripts**:
+
+   * Add the `site` variable to the tidy dataset.
+   * Exclude the `id` variable from the MCA calculation.
+   * Color the PCA plots using relevant categorical variables to help identify groupings.
+   * Move the PCA visualization with variable vectors to the modeling script.
+   * Combine the individual histograms into a single multi-panel figure.
+   * Remove the printing of descriptive statistics for each variable separately; keep only the summary table with all variables described.
+
+3. **Draft the *Scientific Data* descriptor manuscript**: Prepare a clean first draft to share with the tutor for feedback.
+
+4. **Prepare final questions or suggestions** related to reproducible data analysis for discussion.
+
+
