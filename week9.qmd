@@ -1,3 +1,29 @@
 ---
-title: "Week 9 | TBA"
+title: "Week 9 | Final review"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 21 May, 2025  
+⏰ **Time:** 10:30h - 12:30h   
+📖 **Synopsis:** Final review of best practices for reproducible data analysis.      
+:::
+
+:::{.panel-tabset}
+
+### Done in Class
+
+- Answered questions related to data analysis.
+- Discussed best practices for data visualization.
+- Compared PCA and MCA.
+- Scheduled the submission of the final manuscript and R Notebook for evaluation.
+- Collect suggestions for high-quality teaching materials on reproducible data analysis, namely:
+  
+  - Cheatsheets
+  - Infographics
+  - Checklists for starting a new data analysis project
+
+### Final Homework
+
+1. Prepare the Scientific Data manuscript and submit it for feedback prior to final submission
+2. Prepare the R Notebook and submit it for feedback prior to final evaluation

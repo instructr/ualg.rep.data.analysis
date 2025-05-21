@@ -9,7 +9,7 @@
   {
     "objectID": "week7.html",
     "href": "week7.html",
-    "title": "Week 7 | TBA",
+    "title": "Week 7 | Reproducible manuscripts",
     "section": "",
     "text": "Class Details\n\n\n\n📅 Date: 02 May, 2025\n⏰ Time: 14:30h - 16:30h\n📖 Synopsis: Evaluation of the experimental design figure, and providing feedback on best practices for reproducible manuscript writing.\n\n\n\nDone in ClassTo Do at Home\n\n\n\nReviewed the experimental design figure for clarity, completeness, and logical flow.\nAssessed whether the figure effectively communicates the study’s objectives, data collection timeline, and key variables.\nIdentified areas for improvement in visual presentation and labeling.\nDiscussed common pitfalls and best practices in designing figures for clarity and aesthetics.\nProvided feedback on how to align the figure with the narrative of the manuscript.\nShared guidelines for reproducible manuscript writing, emphasizing the importance of collaborative documents, narrative structure, version control, and appropriate citation of tools.\n\n\n\n\nContinue writing the Scientific Data manuscript that describes the dataset analyzed throughout the course.\nClean up and reformat the data analysis scripts, following the best practices discussed in earlier classes.\n\n\n\n\n\n\n\n Back to top"
   },
@@ -23,16 +23,16 @@
   {
     "objectID": "week8.html",
     "href": "week8.html",
-    "title": "Week 8 | TBA",
+    "title": "Week 8 | Progress feedback one-on-one",
     "section": "",
-    "text": "Class Details\n\n\n\n📅 Date: 14 May, 2025\n⏰ Time: 14:00h - 16:00h\n📖 Synopsis: One-on-one meeting focused on receiving feedback on the manuscript draft, the R code used for data analysis, interpretation of results, and adherence to best practices for reproducible research.\n\n\n\nDone in ClassTo Do at Home\n\n\n \n\n\nParticular tasks for BB\n\nRefactor the data analysis script by splitting the current single script into two separate scripts: one for Descriptive Analysis and one for Modeling.\nApply the following changes to the data analysis scripts:\n\nAdd the site variable to the tidy dataset.\nExclude the id variable from the MCA calculation.\nColor the PCA plots using relevant categorical variables to help identify groupings.\nMove the PCA visualization with variable vectors to the modeling script.\nCombine the individual histograms into a single multi-panel figure.\nRemove the printing of descriptive statistics for each variable separately; keep only the summary table with all variables described.\n\nDraft the Scientific Data descriptor manuscript: Prepare a clean first draft to share with the tutor for feedback.\nPrepare final questions or suggestions related to reproducible data analysis for discussion.\n\n\n\n\n\n\n\n Back to top"
+    "text": "Class Details\n\n\n\n📅 Date: 14 May, 2025\n⏰ Time: 14:00h - 16:00h\n📖 Synopsis: One-on-one meeting focused on receiving feedback on the manuscript draft, the R code used for data analysis, interpretation of results, and adherence to best practices for reproducible research.\n\n\n\nDone in ClassTo Do at Home\n\n\nBooks suggested to help with data analysis:\n\nThe Art of Data Science.\nRoger D. Peng and Elizabeth Matsui. 2018.\nhttps://leanpub.com/artofdatascience\nR for Data Science (2e).\nHadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.\nhttps://r4ds.hadley.nz/\nTidy Modeling with R.\nMax Kuhn and Julia Silge. 2023.\nhttps://www.tmwr.org/\nModern Statistics for Modern Biology.\nSusan Holmes and Wolfgang Huber. 2025.\nhttps://www.huber.embl.de/msmb/\n\n\nOverview of Model Classifications\n \n\n\nHow Does Modeling Fit into the Data Analysis Process?\n\n\n\n“Based on: R for Data Science. Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. | Tidy Modeling with R. Max Kuhn and Julia Silge. 2023.”\n\n\n\n\n\nParticular tasks for BB\n\nRefactor the data analysis script by splitting the current single script into two separate scripts: one for Descriptive Analysis and one for Modeling.\nApply the following changes to the data analysis scripts:\n\nAdd the site variable to the tidy dataset.\nExclude the id variable from the MCA calculation.\nColor the PCA plots using relevant categorical variables to help identify groupings.\nMove the PCA visualization with variable vectors to the modeling script.\nCombine the individual histograms into a single multi-panel figure.\nRemove the printing of descriptive statistics for each variable separately; keep only the summary table with all variables described.\n\nDraft the Scientific Data descriptor manuscript: Prepare a clean first draft to share with the tutor for feedback.\nPrepare final questions or suggestions related to reproducible data analysis for discussion.\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "week9.html",
     "href": "week9.html",
-    "title": "Week 9 | TBA",
+    "title": "Week 9 | Final review",
     "section": "",
-    "text": "Back to top"
+    "text": "Class Details\n\n\n\n📅 Date: 21 May, 2025\n⏰ Time: 10:30h - 12:30h\n📖 Synopsis: Final review of best practices for reproducible data analysis.\n\n\n\nDone in ClassFinal Homework\n\n\n\nAnswered questions related to data analysis.\nDiscussed best practices for data visualization.\nCompared PCA and MCA.\nScheduled the submission of the final manuscript and R Notebook for evaluation.\nCollect suggestions for high-quality teaching materials on reproducible data analysis, namely:\n\nCheatsheets\nInfographics\nChecklists for starting a new data analysis project\n\n\n\n\n\nPrepare the Scientific Data manuscript and submit it for feedback prior to final submission\nPrepare the R Notebook and submit it for feedback prior to final evaluation\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "contact_me.html",

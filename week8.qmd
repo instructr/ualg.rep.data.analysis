@@ -1,5 +1,5 @@
 ---
-title: "Week 8 | TBA"
+title: "Week 8 | Progress feedback one-on-one"
 ---
 
 ::: {.callout-note}
@@ -13,8 +13,41 @@ title: "Week 8 | TBA"
 
 ### Done in Class
 
+Books suggested to help with data analysis:
+
+  1. *The Art of Data Science.*   
+Roger D. Peng and Elizabeth Matsui. 2018.   
+<https://leanpub.com/artofdatascience>   
+
+  2. *R for Data Science* (2e).   
+Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.   
+<https://r4ds.hadley.nz/>   
+  
+  3. *Tidy Modeling with R.*      
+Max Kuhn and Julia Silge. 2023.   
+<https://www.tmwr.org/>   
+
+  4. *Modern Statistics for Modern Biology.*   
+Susan Holmes and Wolfgang Huber. 2025.   
+<https://www.huber.embl.de/msmb/>   
+
+
+#### Overview of Model Classifications
+
 ![](pics/types_of_models.png)
 ![](pics/categories_of_models.png)
+
+#### How Does Modeling Fit into the Data Analysis Process?
+
+!["Based on: R for Data Science. Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. | Tidy Modeling with R. Max Kuhn and Julia Silge. 2023."](pics/modelling_process.png)
+
+
+
+
+
+
+
+
 
 ### To Do at Home
 
