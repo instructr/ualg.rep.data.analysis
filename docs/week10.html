@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 10 | TBA – Reproducible Data Analysis Course</title>
+<title>Week 10 | Setup Git in personal laptop – Reproducible Data Analysis Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -102,27 +102,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week1.html">
- <span class="dropdown-text">Week 1 | 1. System setup</span></a>
+ <span class="dropdown-text">Week 1 | System setup</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week2.html">
- <span class="dropdown-text">Week 2 | 2. R Intro &amp; Tidy data</span></a>
+ <span class="dropdown-text">Week 2 | R Intro &amp; Tidy data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week3.html">
- <span class="dropdown-text">Week 3 | 2.1 Identify variables &amp; Tidy data</span></a>
+ <span class="dropdown-text">Week 3 | Identify variables &amp; Tidy data</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week4.html">
- <span class="dropdown-text">Week 4 | 3. Exploratory analysis</span></a>
+ <span class="dropdown-text">Week 4 | Exploratory analysis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week5.html">
- <span class="dropdown-text">Week 5 | 3.1 Exploratory analysis critique</span></a>
+ <span class="dropdown-text">Week 5 | Exploratory analysis critique</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week6.html">
- <span class="dropdown-text">Week 6 | 4. R Code review &amp; Experimental Design Figure</span></a>
+ <span class="dropdown-text">Week 6 | R Code review &amp; Experimental Design Figure</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./week7.html">
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./week10.html">
- <span class="dropdown-text">Week 10 | TBA</span></a>
+ <span class="dropdown-text">Week 10 | Setup Git in personal laptop</span></a>
   </li>  
     </ul>
   </li>
@@ -185,15 +185,30 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#install-git-for-windows" id="toc-install-git-for-windows" class="nav-link active" data-scroll-target="#install-git-for-windows">1. Install Git for Windows</a></li>
+  <li><a href="#configure-your-git-identity" id="toc-configure-your-git-identity" class="nav-link" data-scroll-target="#configure-your-git-identity">2. Configure Your Git Identity</a></li>
+  <li><a href="#generate-ssh-keys-for-github" id="toc-generate-ssh-keys-for-github" class="nav-link" data-scroll-target="#generate-ssh-keys-for-github">3. Generate SSH Keys for GitHub</a></li>
+  <li><a href="#add-the-public-key-to-your-github-account" id="toc-add-the-public-key-to-your-github-account" class="nav-link" data-scroll-target="#add-the-public-key-to-your-github-account">4. Add the Public Key to Your GitHub Account</a></li>
+  <li><a href="#create-or-edit-ssh-config-file" id="toc-create-or-edit-ssh-config-file" class="nav-link" data-scroll-target="#create-or-edit-ssh-config-file">5. Create or Edit SSH Config File</a></li>
+  <li><a href="#test-ssh-connection" id="toc-test-ssh-connection" class="nav-link" data-scroll-target="#test-ssh-connection">6. Test SSH Connection</a></li>
+  <li><a href="#create-a-private-github-repository" id="toc-create-a-private-github-repository" class="nav-link" data-scroll-target="#create-a-private-github-repository">7. Create a Private GitHub Repository</a></li>
+  <li><a href="#create-or-open-a-local-project-in-rstudio" id="toc-create-or-open-a-local-project-in-rstudio" class="nav-link" data-scroll-target="#create-or-open-a-local-project-in-rstudio">8. Create or Open a Local Project in RStudio</a></li>
+  <li><a href="#make-initial-commit-and-push-to-github" id="toc-make-initial-commit-and-push-to-github" class="nav-link" data-scroll-target="#make-initial-commit-and-push-to-github">9. Make Initial Commit and Push to GitHub</a></li>
+  <li><a href="#you-are-done" id="toc-you-are-done" class="nav-link" data-scroll-target="#you-are-done">You are Done!</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 10 | TBA</h1>
+<h1 class="title">Week 10 | Setup Git in personal laptop</h1>
 </div>
 
 
@@ -210,8 +225,163 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Class Details
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>📅 <strong>Date:</strong> 09 June, 2025<br>
+⏰ <strong>Time:</strong> 15:30h - 17:30h<br>
+📖 <strong>Synopsis:</strong> Set up Git in personal laptops and connect it to personal GitHub repositories for individual accounts.</p>
+</div>
+</div>
+<p><strong>Step-by-step guide</strong> for students to install Git on Windows, set up SSH keys,<br>
+configure Git to use the correct key, and connect to a private GitHub repository.</p>
+<hr>
+<section id="install-git-for-windows" class="level3">
+<h3 class="anchored" data-anchor-id="install-git-for-windows">1. Install Git for Windows</h3>
+<ol type="1">
+<li>Go to: <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+<li>Download and run the installer.</li>
+<li>Use default settings, but when asked for:
+<ul>
+<li><strong>“Choosing the default editor used by Git”</strong> → you can choose <em>Notepad</em> or <em>Visual Studio Code</em>.</li>
+<li><strong>“Choosing HTTPS transport backend”</strong> → choose <em>Use OpenSSH</em>.</li>
+</ul></li>
+<li>Finish the installation.</li>
+</ol>
+<p>To verify Git is installed: Open <strong>Git Bash</strong> (you can find it in the Start Menu), and type:</p>
+<pre><code>git --version</code></pre>
+<hr>
+</section>
+<section id="configure-your-git-identity" class="level3">
+<h3 class="anchored" data-anchor-id="configure-your-git-identity">2. Configure Your Git Identity</h3>
+<p>In <strong>Git Bash</strong>, enter your name and email (use the same email as used on GitHub):</p>
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "your@email.com"</code></pre>
+<hr>
+</section>
+<section id="generate-ssh-keys-for-github" class="level3">
+<h3 class="anchored" data-anchor-id="generate-ssh-keys-for-github">3. Generate SSH Keys for GitHub</h3>
+<p>In <strong>Git Bash</strong>, run:</p>
+<pre><code>ssh-keygen -t ed25519 -C "your@email.com" -f ~/.ssh/id_github</code></pre>
+<ul>
+<li>When prompted for a passphrase, <strong>press Enter</strong> to leave it empty.</li>
+</ul>
+<p>This creates two files:</p>
+<ul>
+<li><code>~/.ssh/id_github</code> (private key)</li>
+<li><code>~/.ssh/id_github.pub</code> (public key)</li>
+</ul>
+<hr>
+</section>
+<section id="add-the-public-key-to-your-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="add-the-public-key-to-your-github-account">4. Add the Public Key to Your GitHub Account</h3>
+<ol type="1">
+<li><p>Log in to <a href="https://github.com">https://github.com</a></p></li>
+<li><p>Go to <strong>Settings</strong> → <strong>SSH and GPG keys</strong> → <strong>New SSH key</strong></p></li>
+<li><p>Title: For example <code>My Windows Laptop</code></p></li>
+<li><p>In Git Bash, run:</p>
+<pre><code>cat ~/.ssh/id_github.pub</code></pre>
+<p>Copy the entire output (starting with <code>ssh-ed25519</code>) and paste it into GitHub.</p></li>
+<li><p>Click <strong>Add SSH key</strong></p></li>
+</ol>
+<hr>
+</section>
+<section id="create-or-edit-ssh-config-file" class="level3">
+<h3 class="anchored" data-anchor-id="create-or-edit-ssh-config-file">5. Create or Edit SSH Config File</h3>
+<p>To ensure Git uses the correct key when connecting to GitHub:</p>
+<ol type="1">
+<li><p>Open Git Bash</p></li>
+<li><p>Run:</p>
+<pre><code>nano ~/.ssh/config</code></pre></li>
+<li><p>Add the following:</p>
+<pre><code>Host github.com
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_github</code></pre></li>
+<li><p>Save and exit (<code>CTRL+O</code>, Enter, then <code>CTRL+X</code>)</p></li>
+</ol>
+<hr>
+</section>
+<section id="test-ssh-connection" class="level3">
+<h3 class="anchored" data-anchor-id="test-ssh-connection">6. Test SSH Connection</h3>
+<p>In <strong>Git Bash</strong>, run:</p>
+<pre><code>ssh -T git@github.com</code></pre>
+<p>You should see a message like:</p>
+<p><code>Hi yourusername! You've successfully authenticated...</code></p>
+<hr>
+</section>
+<section id="create-a-private-github-repository" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-private-github-repository">7. Create a Private GitHub Repository</h3>
+<ol type="1">
+<li><p>Go to <a href="https://github.com">https://github.com</a> and log in.</p></li>
+<li><p>Click the <strong>“+”</strong> icon (top right) → <strong>“New repository”</strong></p></li>
+<li><p>Fill in:</p>
+<ul>
+<li><p><strong>Repository name</strong>: <code>your-repo-name</code></p></li>
+<li><p><strong>Visibility</strong>: <em>Private</em></p></li>
+<li><p>Leave all checkboxes <strong>unchecked</strong>:</p>
+<ul>
+<li>Add a README</li>
+<li>Add .gitignore</li>
+<li>Choose a license</li>
+</ul></li>
+</ul></li>
+<li><p>Click <strong>Create repository</strong></p></li>
+<li><p>Click <strong>Code</strong> → Select <strong>SSH</strong> → Copy the link (e.g., <code>git@github.com:yourusername/your-repo-name.git</code>)</p></li>
+</ol>
+<hr>
+</section>
+<section id="create-or-open-a-local-project-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="create-or-open-a-local-project-in-rstudio">8. Create or Open a Local Project in RStudio</h3>
+<ol type="1">
+<li><p>In RStudio:</p>
+<ul>
+<li>Go to <strong>File → New Project → New Directory → Empty Project</strong></li>
+<li>Name the folder and choose a location</li>
+<li>Click <strong>Create Project</strong></li>
+</ul></li>
+<li><p>Enable Git in the project:</p>
+<ul>
+<li><strong>Tools → Project Options → Git/SVN</strong> → Check <em>Enable version control interface for this project</em></li>
+</ul></li>
+<li><p>In the RStudio <strong>Terminal</strong> (bottom pane), run:</p></li>
+</ol>
+<pre><code>git init
+git remote add origin git@github.com:yourusername/your-repo-name.git</code></pre>
+<hr>
+</section>
+<section id="make-initial-commit-and-push-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="make-initial-commit-and-push-to-github">9. Make Initial Commit and Push to GitHub</h3>
+<ol type="1">
+<li>(Optional) Create a file locally, e.g., <code>README.md</code> or <code>.R</code> script.</li>
+<li>Run the following in the <strong>Terminal</strong>:</li>
+</ol>
+<pre><code>git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main</code></pre>
+<hr>
+</section>
+<section id="you-are-done" class="level2">
+<h2 class="anchored" data-anchor-id="you-are-done">You are Done!</h2>
+<p>You can now:</p>
+<ul>
+<li>Commit the changes to your local git repository;</li>
+<li>Push the local commit history to your GitHub repo:</li>
+</ul>
+<pre><code>git add .
+git commit -m "your message"
+git push</code></pre>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

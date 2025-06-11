@@ -1,5 +1,5 @@
 ---
-title: "Week 1 | 1. System setup"
+title: "Week 1 | System setup"
 ---
 
 ::: {.callout-note}

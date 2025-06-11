@@ -1,3 +1,186 @@
 ---
-title: "Week 10 | TBA"
+title: "Week 10 | Setup Git in personal laptop"
 ---
+
+::: {.callout-note}
+## Class Details
+📅 **Date:** 09 June, 2025  
+⏰ **Time:** 15:30h - 17:30h   
+📖 **Synopsis:** Set up Git in personal laptops and connect it to personal GitHub repositories for individual accounts.  
+:::
+
+
+**Step-by-step guide** for students to install Git on Windows, set up SSH keys,  
+configure Git to use the correct key, and connect to a private GitHub repository.
+
+---
+
+### 1. Install Git for Windows
+
+1. Go to: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+2. Download and run the installer.
+3. Use default settings, but when asked for:
+   - **“Choosing the default editor used by Git”** → you can choose *Notepad* or *Visual Studio Code*.
+   - **“Choosing HTTPS transport backend”** → choose *Use OpenSSH*.
+4. Finish the installation.
+
+To verify Git is installed:
+Open **Git Bash** (you can find it in the Start Menu), and type:
+
+```
+git --version
+```
+
+---
+
+### 2. Configure Your Git Identity
+
+In **Git Bash**, enter your name and email (use the same email as used on GitHub):
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+```
+
+---
+
+### 3. Generate SSH Keys for GitHub
+
+In **Git Bash**, run:
+
+```
+ssh-keygen -t ed25519 -C "your@email.com" -f ~/.ssh/id_github
+```
+
+* When prompted for a passphrase, **press Enter** to leave it empty.
+
+This creates two files:
+
+* `~/.ssh/id_github` (private key)
+* `~/.ssh/id_github.pub` (public key)
+
+---
+
+### 4. Add the Public Key to Your GitHub Account
+
+1. Log in to [https://github.com](https://github.com)
+2. Go to **Settings** → **SSH and GPG keys** → **New SSH key**
+3. Title: For example `My Windows Laptop`
+4. In Git Bash, run:
+
+   ```
+   cat ~/.ssh/id_github.pub
+   ```
+
+   Copy the entire output (starting with `ssh-ed25519`) and paste it into GitHub.
+5. Click **Add SSH key**
+
+---
+
+### 5. Create or Edit SSH Config File
+
+To ensure Git uses the correct key when connecting to GitHub:
+
+1. Open Git Bash
+
+2. Run:
+
+   ```
+   nano ~/.ssh/config
+   ```
+
+3. Add the following:
+
+   ```
+   Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_github
+   ```
+
+4. Save and exit (`CTRL+O`, Enter, then `CTRL+X`)
+
+---
+
+### 6. Test SSH Connection
+
+In **Git Bash**, run:
+
+```
+ssh -T git@github.com
+```
+
+You should see a message like:
+
+`Hi yourusername! You've successfully authenticated...`
+
+
+---
+
+### 7. Create a Private GitHub Repository
+
+1. Go to [https://github.com](https://github.com) and log in.
+2. Click the **"+"** icon (top right) → **"New repository"**
+3. Fill in:
+
+   * **Repository name**: `your-repo-name`
+   * **Visibility**: *Private*
+   * Leave all checkboxes **unchecked**:
+
+     * Add a README
+     * Add .gitignore
+     * Choose a license
+4. Click **Create repository**
+5. Click **Code** → Select **SSH** → Copy the link (e.g., `git@github.com:yourusername/your-repo-name.git`)
+
+---
+
+### 8. Create or Open a Local Project in RStudio
+
+1. In RStudio:
+
+   * Go to **File → New Project → New Directory → Empty Project**
+   * Name the folder and choose a location
+   * Click **Create Project**
+
+2. Enable Git in the project:
+
+   * **Tools → Project Options → Git/SVN** → Check *Enable version control interface for this project*
+
+3. In the RStudio **Terminal** (bottom pane), run:
+
+```
+git init
+git remote add origin git@github.com:yourusername/your-repo-name.git
+```
+
+---
+
+### 9. Make Initial Commit and Push to GitHub
+
+1. (Optional) Create a file locally, e.g., `README.md` or `.R` script.
+2. Run the following in the **Terminal**:
+
+```
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git push -u origin main
+```
+
+---
+
+## You are Done!
+
+You can now:
+
+* Commit the changes to your local git repository;
+* Push the local commit history to your GitHub repo:
+
+```
+git add .
+git commit -m "your message"
+git push
+```
+
+

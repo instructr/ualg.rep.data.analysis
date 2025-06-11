@@ -1,5 +1,5 @@
 ---
-title: "Week 3 | 2.1 Identify variables & Tidy data"
+title: "Week 3 | Identify variables & Tidy data"
 ---
 
 ::: {.callout-note}

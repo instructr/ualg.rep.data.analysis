@@ -1,5 +1,5 @@
 ---
-title: "Week 2 | 2. R Intro & Tidy data"
+title: "Week 2 | R Intro & Tidy data"
 ---
 
 ::: {.callout-note}

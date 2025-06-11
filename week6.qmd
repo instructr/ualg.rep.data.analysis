@@ -1,5 +1,5 @@
 ---
-title: "Week 6 | 4. R Code review & Experimental Design Figure"
+title: "Week 6 | R Code review & Experimental Design Figure"
 ---
 
 ::: {.callout-note}

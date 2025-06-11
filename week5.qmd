@@ -1,5 +1,5 @@
 ---
-title: "Week 5 | 3.1 Exploratory analysis critique"
+title: "Week 5 | Exploratory analysis critique"
 ---
 
 ::: {.callout-note}

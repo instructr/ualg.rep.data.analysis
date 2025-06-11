@@ -1,12 +1,12 @@
 ---
-title: "Week 4 | 3. Exploratory analysis"
+title: "Week 4 | Exploratory analysis"
 ---
 
 ::: {.callout-note}
 ## Class Details
 📅 **Date:** 01 April, 2025  
-⏰ **Time:** 09:30h - 11:30h  (+2h)
-📖 **Synopsis:** **Synopsis:** Organized data analysis project with a clear folder structure, set up an RStudio project with Git, and connected it to GitHub for version control and collaboration.  
+⏰ **Time:** 09:30h - 11:30h  (+2h)   
+📖 **Synopsis:** Organized data analysis project with a clear folder structure, set up an RStudio project with Git, and connected it to GitHub for version control and collaboration.  
 :::
 
 </br>
